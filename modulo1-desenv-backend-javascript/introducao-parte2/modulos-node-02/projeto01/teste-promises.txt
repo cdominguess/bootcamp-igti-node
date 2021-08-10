@@ -1,0 +1,2 @@
+ - Conteúdo inicial do arquivo
+ - Conteúdo adicionado na segunda linha.

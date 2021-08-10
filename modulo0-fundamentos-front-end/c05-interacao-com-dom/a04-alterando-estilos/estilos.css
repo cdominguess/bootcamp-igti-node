@@ -1,0 +1,25 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#diagrama {
+  position: relative;
+  border: 2px dashed grey;
+  height: 400px;
+  overflow: hidden;
+}
+
+#caixa {
+  position: absolute;
+  width: 100px;
+  text-align: center;
+  border: 2px solid rgb(135, 135, 216);
+  background-color: rgb(220, 242, 250);
+  padding: 4px;
+  cursor: grab;
+  user-select: none;
+}
+
+#caixa.arrastando {
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}

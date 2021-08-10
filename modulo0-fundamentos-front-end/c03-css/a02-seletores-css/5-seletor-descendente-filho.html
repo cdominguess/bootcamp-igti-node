@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<style>
+  div {
+    border: 2px solid grey;
+    margin: 5px;
+  }
+  .c1 div {
+    border-style: dashed;
+  }
+  .c1 > div {
+    border-color: red;
+  }
+</style>
+
+<div class="c1">
+  div 1
+  <div>
+    div 1.1
+    <div>div 1.1.1</div>
+  </div>
+  <div>div 1.2</div>
+</div>

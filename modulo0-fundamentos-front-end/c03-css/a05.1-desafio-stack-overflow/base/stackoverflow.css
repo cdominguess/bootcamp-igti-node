@@ -1,0 +1,15 @@
+.logo {
+  width: 150px;
+  margin: -4px 8px 0 8px;
+  height: 30px;
+  background-image: url(sprites.svg);
+  background-position: 0 -500px;
+}
+
+#placeholder-content {
+  height: 800px;
+}
+
+#placeholder-footer {
+  height: 100px;
+}

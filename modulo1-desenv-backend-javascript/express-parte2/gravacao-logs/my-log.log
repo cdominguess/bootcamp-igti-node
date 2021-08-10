@@ -1,0 +1,14 @@
+2021-08-05T21:02:05.046Z [my-app] error: Exemplo de mensagem do nível ERROR
+2021-08-05T21:02:05.049Z [my-app] warn: Exemplo de mensagem do nível WARN
+2021-08-05T21:02:05.050Z [my-app] info: Exemplo de mensagem do nível INFO
+2021-08-05T21:02:05.050Z [my-app] verbose: Exemplo de mensagem do nível VERBOSE
+2021-08-05T21:02:05.051Z [my-app] debug: Exemplo de mensagem do nível DEBUG
+2021-08-05T21:02:05.052Z [my-app] silly: Exemplo de mensagem do nível SILLY
+2021-08-05T21:02:05.052Z [my-app] http: Exemplo de mensagem do nível HTTP
+2021-08-05T21:03:03.686Z [my-app] error: Exemplo de mensagem do nível ERROR
+2021-08-05T21:03:03.689Z [my-app] warn: Exemplo de mensagem do nível WARN
+2021-08-05T21:03:03.690Z [my-app] info: Exemplo de mensagem do nível INFO
+2021-08-05T21:03:03.691Z [my-app] verbose: Exemplo de mensagem do nível VERBOSE
+2021-08-05T21:03:03.691Z [my-app] debug: Exemplo de mensagem do nível DEBUG
+2021-08-05T21:03:03.692Z [my-app] silly: Exemplo de mensagem do nível SILLY
+2021-08-05T21:03:03.693Z [my-app] http: Exemplo de mensagem do nível HTTP

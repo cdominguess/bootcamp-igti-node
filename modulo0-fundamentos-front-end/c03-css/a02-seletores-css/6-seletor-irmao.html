@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<style>
+    div,
+    p {
+        border: 2px solid grey;
+        margin: 5px;
+    }
+
+    div~div {
+        border-style: dashed;
+    }
+
+    div+div {
+        border-color: red;
+    }
+</style>
+
+<body>
+    <div>Filho 1: div</div>
+    
+    <p>Filho 2: p</p>
+    <div>Filho 3: div</div>
+    <div>
+        Filho 4: div
+        <div>Filho 4.1: div</div>
+    </div>
+</body>
