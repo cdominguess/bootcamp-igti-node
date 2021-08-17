@@ -1,0 +1,69 @@
+{
+  "nextId": 7,
+  "pedidos": [
+    {
+      "id": 1,
+      "cliente": "Lavínia Dâmaso",
+      "produto": "Pizza Muçarela",
+      "valor": 26,
+      "entregue": true,
+      "timestamp": "2021-05-02T19:48:09.765Z"
+    },
+    {
+      "id": 3,
+      "cliente": "Lavínia Dâmaso",
+      "produto": "Pizza Muçarela",
+      "valor": 26.17,
+      "entregue": true,
+      "timestamp": "2021-08-17T04:14:20.849Z"
+    },
+    {
+      "id": 3,
+      "cliente": "Lavínia Dâmaso",
+      "produto": "Pizza Portuguesa",
+      "valor": 26,
+      "entregue": true,
+      "timestamp": "2021-08-17T04:14:20.849Z"
+    },
+    {
+      "id": 5,
+      "cliente": "Juliana Ferreira",
+      "produto": "Pizza Portuguesa",
+      "valor": 29.98,
+      "entregue": true,
+      "timestamp": "2021-08-17T05:18:04.720Z"
+    },
+    {
+      "id": 6,
+      "cliente": "Carlos Domingues",
+      "produto": "Pizza Portuguesa",
+      "valor": 29.98,
+      "entregue": true,
+      "timestamp": "2021-08-17T05:18:04.720Z"
+    },
+    {
+      "id": 7,
+      "cliente": "Anita Dâmaso",
+      "produto": "Pizza Muçarela",
+      "valor": 26.17,
+      "entregue": true,
+      "timestamp": "2021-08-17T04:14:20.849Z"
+    },
+    {
+      "id": 8,
+      "cliente": "Anita Dâmaso",
+      "produto": "Pizza Muçarela",
+      "valor": 26.15,
+      "entregue": true,
+      "timestamp": "2021-08-17T04:14:20.849Z"
+    },
+    {
+      "id": 9,
+      "cliente": "Anita Dâmaso",
+      "produto": "Pizza Muçarela",
+      "valor": 26.05,
+      "entregue": false,
+      "timestamp": "2021-08-17T04:14:20.849Z"
+    }
+  ]
+}
