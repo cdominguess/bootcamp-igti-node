@@ -83,21 +83,12 @@ class PedidoRepository {
     async totalPedidosPorClienteOuProduto(nome, tipoBusca) {
         const arrPedidos = await this.carregarArquivo();
         let valorTotalPedidos = 0;
-        let tipoBuscaStr = '';
 
-        if (tipoBusca === 'C') {
-            valorTotalPedidos = arrPedidos.pedidos
+        valorTotalPedidos = arrPedidos.pedidos
                 .filter((item) => item.cliente == nome && item.entregue == true)
                 .reduce((valorTotalPedidos, item) => (valorTotalPedidos + item.valor), 0);
 
-            tipoBuscaStr = 'Cliente';
-        } else {
-            valorTotalPedidos = arrPedidos.pedidos
-                .filter((item) => item.produto == nome && item.entregue == true)
-                .reduce((valorTotalPedidos, item) => (valorTotalPedidos + item.valor), 0);
-
-            tipoBuscaStr = 'Produto';
-        }
+        let tipoBuscaStr = (tipoBusca === 'C') ? 'Cliente' : 'Produto';
 
         if (valorTotalPedidos == 0) throw { httpStatus: 404, msg: "Pedido(s) do " + tipoBuscaStr + " \"" + nome + "\" não localizado(s)." }
 
@@ -125,7 +116,9 @@ class PedidoRepository {
                 objProdutosEntregues[item] = 1;
             }
         });
+        //arrProdutosEntregues
 
+        // Por fim percorro este objeto e monto o array final conforme enunciado da tarefa
         let arrRetorno = Object.entries(objProdutosEntregues)
             .map((item) => ({ produto: item[0], qtde: item[1] }))
             .sort((a, b) => { return b.qtde - a.qtde })
