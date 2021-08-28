@@ -66,23 +66,36 @@ function authorize(...allowed) {
     }
 }
 
+const arrUsuarios = [
+    { user: 'admin', pass: 'admin' },
+    { user: 'angelo', pass: '1234' },
+    { user: 'carlos', pass: '4321' }
+];
+
 app.use(basicAuth({
     authorizer: (username, password) => {
+        let userMatches = [];
+        let pwdMatches = [];
 
-		// Obs: Usuário e senha estão "hard coded", apenas para facilitar 
-		// o entendimento. O ideal nesse ponto é buscar as informações do usuário 
-		// de um banco de dados, servidor de autorização, etc.
-        const userMatches = basicAuth.safeCompare(username, 'admin');
-        const pwdMatches = basicAuth.safeCompare(password, 'admin');
+        arrUsuarios.forEach((dados) => {
+            userMatches[dados.user] = basicAuth.safeCompare(username, dados.user);
+            pwdMatches[dados.user] = basicAuth.safeCompare(password, dados.pass);
 
-        const user2Matches = basicAuth.safeCompare(username, 'angelo');
-        const pwd2Matches = basicAuth.safeCompare(password, '1234');
+            if (userMatches[dados.user] && pwdMatches[dados.user]) {
+                console.log("login aceito para login " + dados.user + " e senha " + dados.pass + " - usando login " + username + " e senha " + password);
+            } else {
+                console.log("login errado para login " + dados.user + " e senha " + dados.pass + " - usando login " + username + " e senha " + password);
 
-        return userMatches && pwdMatches || user2Matches && pwd2Matches;
+            }
+        });
+        console.log("usuarios", userMatches);
+        console.log("senhas", pwdMatches);
+
+        return userMatches[username] && pwdMatches[username];
     }
-}))
+}));
 
-app.use("/account", authorize('admin'), accountsRouter);
+app.use("/account", accountsRouter); 
 
 app.listen(3000, async () => {
     try {
