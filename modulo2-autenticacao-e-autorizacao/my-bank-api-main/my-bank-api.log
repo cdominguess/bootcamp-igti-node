@@ -216,3 +216,5 @@
 2021-08-28T00:33:14.382Z [my-bank-api] info: GET /account
 2021-08-28T00:34:50.776Z [my-bank-api] info: GET /account
 2021-08-28T00:34:57.455Z [my-bank-api] info: GET /account
+2021-08-28T00:35:33.870Z [my-bank-api] info: API Started!
+2021-08-28T00:35:51.358Z [my-bank-api] info: GET /account
