@@ -6,6 +6,7 @@ import ClienteRoute from './src/route/Cliente.js';
 import ProdutoRoute from './src/route/Produto.js';
 import FornecedorRoute from './src/route/Fornecedor.js';
 import VendaRoute from './src/route/Venda.js';
+import config from './src/config.js'
 
 const app = express();
 app.use(express.json());
@@ -45,6 +46,6 @@ app.use((err, req, res, next) => {
     res.status(status).send({ success: false, msg: err.msg });
 });
 
-app.listen(3000, () => {
-    logger.info('API iniciada na porta 3000');
+app.listen(config.porta, () => {
+    logger.info('API iniciada na porta ' + config.porta);
 });

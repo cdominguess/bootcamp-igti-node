@@ -1,0 +1,69 @@
+2021-09-03T22:52:54.458Z [loja-api] info API iniciada na porta 9902
+2021-09-03T22:53:45.472Z [loja-api] info API iniciada na porta 9902
+2021-09-03T22:54:07.397Z [loja-api] error POST  |  REQUEST: {"nom":"Carlos F. Domingues","cp":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: {"status":400,"msg":["Atributo 'nome' inválido.","Atributo 'cpf' inválido."]}
+2021-09-03T22:54:21.774Z [loja-api] error POST  |  REQUEST: {"nom":"Carlos F. Domingues","cp":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: {"status":400,"msg":["Atributo 'nome' inválido.","Atributo 'cpf' inválido."]}
+2021-09-03T22:54:44.105Z [loja-api] error POST  |  REQUEST: {"nom":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: {"status":400,"msg":["Atributo 'nome' inválido."]}
+2021-09-04T00:20:23.959Z [loja-api] info API iniciada na porta 9902
+2021-09-04T00:22:59.010Z [loja-api] info API iniciada na porta 9902
+2021-09-04T00:23:56.466Z [loja-api] info API iniciada na porta 9902
+2021-09-04T00:24:11.934Z [loja-api] info API iniciada na porta 9902
+2021-09-04T00:24:27.648Z [loja-api] info API iniciada na porta 9902
+2021-09-04T00:25:48.336Z [loja-api] info API iniciada na porta 9902
+2021-09-04T00:27:14.502Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: undefined
+2021-09-04T00:41:43.705Z [loja-api] info API iniciada na porta 9902
+2021-09-04T00:44:50.480Z [loja-api] info API iniciada na porta 9902
+2021-09-04T00:46:12.269Z [loja-api] info API iniciada na porta 9902
+2021-09-04T00:46:23.038Z [loja-api] info API iniciada na porta 9902
+2021-09-04T00:46:42.636Z [loja-api] info API iniciada na porta 9902
+2021-09-04T00:51:03.201Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: undefined
+2021-09-04T00:51:34.920Z [loja-api] info API iniciada na porta 9902
+2021-09-04T00:51:40.671Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: undefined
+2021-09-04T00:53:42.988Z [loja-api] info API iniciada na porta 9902
+2021-09-04T00:53:55.750Z [loja-api] info API iniciada na porta 9902
+2021-09-04T00:53:58.825Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: undefined
+2021-09-04T00:54:47.175Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:03:01.996Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:05:39.089Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:13:45.702Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:14:05.688Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:14:20.907Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:15:45.587Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:16:49.667Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:18:00.432Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:18:21.594Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:18:24.664Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:18:48.530Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:19:27.219Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:20:13.443Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:20:29.416Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:20:37.582Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:20:54.336Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:20:58.538Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:25:20.356Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:26:47.714Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:27:22.451Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:29:00.437Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:29:18.043Z [loja-api] error POST  |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: {}
+2021-09-04T01:30:24.073Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:30:31.296Z [loja-api] error POST  |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: {}
+2021-09-04T01:30:46.425Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:30:48.315Z [loja-api] error POST  |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: {}
+2021-09-04T01:31:56.108Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:32:00.319Z [loja-api] error POST  |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: {}
+2021-09-04T01:32:32.523Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:32:34.790Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: undefined
+2021-09-04T01:34:52.684Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:35:07.798Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: undefined
+2021-09-04T01:37:56.568Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:38:04.348Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: undefined
+2021-09-04T01:40:27.109Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:46:45.384Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:48:09.563Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:48:28.525Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: undefined
+2021-09-04T01:49:35.423Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:49:42.104Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: {"cliente_id":1,"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}
+2021-09-04T01:58:56.320Z [loja-api] info API iniciada na porta 9902
+2021-09-04T01:59:15.501Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:01:12.912Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:06:23.752Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:10:27.432Z [loja-api] info API iniciada na porta 9902
