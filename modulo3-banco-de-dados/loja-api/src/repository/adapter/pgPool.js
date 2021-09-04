@@ -11,16 +11,39 @@ class PgPool {
         this.objConexao = objPool;
     }
 
-    async criar(obj) {
+    async criar(obj, entidade) {
         try {
+            const dadosInsert = this._montarDadosInsert(obj, entidade);
+
             const conn = await this.objConexao.connect();
-            const sql = "INSERT INTO cliente (nome, cpf, telefone, email, endereco) VALUES ($1, $2, $3, $4, $5) RETURNING *";
-            const arrValores = [obj.nome, obj.cpf, obj.telefone, obj.email, obj.endereco];
-            const res = await conn.query(sql, arrValores);
+            const res = await conn.query(dadosInsert.sql, dadosInsert.valores);
 
             return res.rows[0];
         } catch (err) {
             console.log("ERRO", err);
+        }
+    }
+
+    /**
+     * Método que monta dinamicamente o necessário para um INSERT, conforme dados de "obj" e tabela de "entidade"
+     * @param {object} obj 
+     * @param {string} entidade 
+     * @returns object
+     */
+    _montarDadosInsert(obj, entidade) {
+        const arrColunas = Object.keys(obj);
+        const arrValores = Object.values(obj);
+        const countColunas = arrColunas.length;
+
+        let strInsert = `INSERT INTO ${entidade} (${arrColunas.join(', ')}) VALUES (`;
+        for (let i = 1; i <= countColunas; i++) {
+            strInsert += ((i < countColunas) ? `$${i}, ` : `$${i}`);
+        }
+        strInsert += `) RETURNING *;`;
+
+        return {
+            sql: strInsert,
+            valores: arrValores
         }
     }
 }

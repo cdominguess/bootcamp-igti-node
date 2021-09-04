@@ -67,3 +67,31 @@
 2021-09-04T02:01:12.912Z [loja-api] info API iniciada na porta 9902
 2021-09-04T02:06:23.752Z [loja-api] info API iniciada na porta 9902
 2021-09-04T02:10:27.432Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:27:41.365Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:28:22.080Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:31:01.034Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:31:09.110Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: false
+2021-09-04T02:36:37.745Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:36:40.485Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: false
+2021-09-04T02:36:50.729Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:36:51.654Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: false
+2021-09-04T02:39:04.577Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:39:07.067Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: false
+2021-09-04T02:41:57.236Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:42:00.783Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: false
+2021-09-04T02:42:19.776Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:42:21.202Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: false
+2021-09-04T02:46:54.468Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:46:59.517Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Carlos F. Domingues","cpf":"000.464.870-69","telefone":"(48) 98500-1777","email":"dominguess@gmail.com","endereco":"Rua Tenente Caminha, 17 casa 03 - Barreiros - São José SC"}  |  RESPONSE: false
+2021-09-04T02:48:02.027Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:48:50.760Z [loja-api] info POST /clientes |  REQUEST: {"nome":"João Dias","cpf":"234.123.870-22","telefone":"(48) 98500-1777","email":"email.qualquer@gmail.com","endereco":"Rua Tenente Caminha, 199 casa 02 - Barreiros - São José SC"}  |  RESPONSE: undefined
+2021-09-04T02:49:54.120Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:49:56.776Z [loja-api] info POST /clientes |  REQUEST: {"nome":"João Dias","cpf":"234.123.870-22","telefone":"(48) 98500-1777","email":"email.qualquer@gmail.com","endereco":"Rua Tenente Caminha, 199 casa 02 - Barreiros - São José SC"}  |  RESPONSE: false
+2021-09-04T02:50:18.492Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:50:25.993Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:50:28.916Z [loja-api] info POST /clientes |  REQUEST: {"nome":"João Dias","cpf":"234.123.870-22","telefone":"(48) 98500-1777","email":"email.qualquer@gmail.com","endereco":"Rua Tenente Caminha, 199 casa 02 - Barreiros - São José SC"}  |  RESPONSE: undefined
+2021-09-04T02:50:44.077Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:50:48.771Z [loja-api] info POST /clientes |  REQUEST: {"nome":"João Dias","cpf":"234.123.870-22","telefone":"(48) 98500-1777","email":"email.qualquer@gmail.com","endereco":"Rua Tenente Caminha, 199 casa 02 - Barreiros - São José SC"}  |  RESPONSE: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"(48) 98500-1777","email":"email.qualquer@gmail.com","endereco":"Rua Tenente Caminha, 199 casa 02 - Barreiros - São José SC"}
+2021-09-04T02:51:57.782Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:52:01.540Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:52:14.238Z [loja-api] info API iniciada na porta 9902
