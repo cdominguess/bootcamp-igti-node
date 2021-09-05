@@ -341,3 +341,54 @@
 2021-09-05T00:33:28.448Z [loja-api] info API iniciada na porta 9902
 2021-09-05T00:34:08.894Z [loja-api] info API iniciada na porta 9902
 2021-09-05T00:34:14.472Z [loja-api] error GET /clientes/5 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 5 não localizado."}
+2021-09-05T00:36:33.241Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:37:26.917Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:38:26.930Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:49:23.864Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:49:57.436Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:52:24.347Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:58:10.281Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:00:42.209Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:04:55.603Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:05:30.393Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:06:23.321Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:09:09.495Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:09:37.829Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:10:19.451Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:13:19.090Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:14:10.039Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:16:47.668Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:17:16.257Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:19:33.919Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:21:44.708Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:25:37.216Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:27:32.306Z [loja-api] error GET /clientes/5 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 5 não localizado."}
+2021-09-05T01:29:50.789Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:29:58.145Z [loja-api] error GET /clientes/5 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 5 não localizado."}
+2021-09-05T01:30:18.747Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:30:40.912Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:31:52.386Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:36:44.698Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:36:47.676Z [loja-api] error PUT /clientes/5 |  REQUEST: {"nome":"João Dias alterado","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com.br","endereco":"Rua X, 12"}  |  RESPONSE: {"status":404,"msg":"ID 5 não localizado."}
+2021-09-05T01:38:03.644Z [loja-api] info PUT /clientes |  REQUEST: {"nome":"João Dias alterado","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com.br","endereco":"Rua X, 12"}  |  RESPONSE: {"cliente_id":2,"nome":"João Dias alterado","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com.br","endereco":"Rua X, 12"}
+2021-09-05T01:38:24.816Z [loja-api] info PUT /clientes |  REQUEST: {"nome":"João Dias alterado novamente","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com.br","endereco":"Rua X, 12"}  |  RESPONSE: {"cliente_id":2,"nome":"João Dias alterado novamente","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com.br","endereco":"Rua X, 12"}
+2021-09-05T01:39:11.327Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:40:14.820Z [loja-api] error POST /clientes |  REQUEST: {"nom":"Sílvia Laura Jardin","cp":"234.123.870-22","telefone":"98489-4545","email":"silvia@gmail.com","endereco":"Rua 12, 199 - Estreito - Florianópolis SC"}  |  RESPONSE: {"status":400,"msg":["Atributo 'nome' inválido.","Atributo 'cpf' inválido."]}
+2021-09-05T01:40:25.575Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:40:27.018Z [loja-api] error POST /clientes |  REQUEST: {"nom":"Sílvia Laura Jardin","cp":"234.123.870-22","telefone":"98489-4545","email":"silvia@gmail.com","endereco":"Rua 12, 199 - Estreito - Florianópolis SC"}  |  RESPONSE: {"status":400,"msg":["Atributo 'nomeddddd' inválido.","Atributo 'cpf' inválido."]}
+2021-09-05T01:40:32.223Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:40:56.811Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:41:38.225Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:42:28.176Z [loja-api] error DELETE /clientes/5 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 5 não localizado."}
+2021-09-05T01:43:17.741Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:43:21.424Z [loja-api] error DELETE /clientes/5 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 5 não localizadoooo."}
+2021-09-05T01:43:25.972Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:44:10.978Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:44:41.132Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:45:13.222Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:45:50.779Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:46:07.211Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:46:29.611Z [loja-api] info API iniciada na porta 9902
+2021-09-05T01:46:35.161Z [loja-api] error DELETE /clientes/5 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 5 não localizado."}
+2021-09-05T01:46:40.099Z [loja-api] error DELETE /clientes/4 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 4 não localizado."}
+2021-09-05T01:48:17.208Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Sílvia Laura Jardin","cpf":"234.123.870-22","telefone":"98489-4545","email":"silvia@gmail.com","endereco":"Rua 12, 199 - Estreito - Florianópolis SC"}  |  RESPONSE: {"cliente_id":4,"nome":"Sílvia Laura Jardin","cpf":"234.123.870-22","telefone":"98489-4545","email":"silvia@gmail.com","endereco":"Rua 12, 199 - Estreito - Florianópolis SC"}

@@ -1,25 +1,41 @@
 import pgPool from "./adapter/pgPool.js";
 import pgSequelize from "./adapter/pgSequelize.js";
 import config from "../config.js";
-
-/**
- * Classe base para os repositórios estenderem e usarem o adaptador de conexão, que poderá ser o pgPool ou Sequelize.
- * Este parâmetro está definido no arquivo de configurações da aplicação 
- */
 export default class BaseRepository {
 
     /**
      * Contrutor da classe para quando algum repositório for instanciado já definir o adapter do banco
+     * Também recebe no contructor o nome da entidade que será manipulada
+     * 
+     * @param {string} nomeEntidade
      */
-    constructor() {
+    constructor(nomeEntidade) {
         const objConfigDB = (process.env.NODE_ENV === 'production') ? config.dbProd : config.dbDev;
-        
+
         if (config.adapter === 'pgPool') {
-            this.adapter = new pgPool(objConfigDB);
+            this.adapter = new pgPool(objConfigDB, nomeEntidade);
         } else {
-            this.adapter = new pgSequelize(objConfigDB);
+            this.adapter = new pgSequelize(objConfigDB, nomeEntidade);
         }
     }
-}
 
-//export default new BaseRepository();
+    async buscar() {
+        return await this.adapter.buscar();
+    }
+
+    async buscarPorId(id) {
+        return await this.adapter.buscarPorId(id);
+    }
+
+    async criar(obj) {
+        return await this.adapter.criar(obj);
+    }
+
+    async atualizar(obj, id) {
+        return await this.adapter.atualizar(obj, id);
+    }
+
+    async excluir(id) {
+        return await this.adapter.excluir(id);
+    }
+}

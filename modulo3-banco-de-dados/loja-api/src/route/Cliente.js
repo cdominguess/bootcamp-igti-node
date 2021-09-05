@@ -10,16 +10,33 @@ const objRouter = express.Router();
  * 2 - Isso causa transtornos quando tem que se passar algo para o constructor() desse controller.
  * 
  * SOLUÇÃO ENCONTRADA:
- *   - Declarar o router como o primeiro exemplo abaixo, assim gera-se uma instância do controller que será executada somente quando a rota for chamada
+ *   - Declarar o router como o primeiro exemplo abaixo, assim gera-se uma instância do controller 
+ *     que será executada somente quando a rota for chamada de fato
  */
 
+objRouter.get("/", (req, res, next) => {
+    const objController = new controller();
+    objController.buscar(req, res, next);
+});
+
 objRouter.get("/:id", (req, res, next) => {
-    const objController = new controller;
+    const objController = new controller();
     objController.buscarPorId(req, res, next);
 });
 
-// objRouter.post("/", objController.criar);
-// objRouter.put("/:id", objController.atualizar);
-// objRouter.delete("/:id", objController.excluir);
+objRouter.post("/", (req, res, next) => {
+    const objController = new controller();
+    objController.criar(req, res, next);
+});
+
+objRouter.put("/:id", (req, res, next) => {
+    const objController = new controller();
+    objController.atualizar(req, res, next);
+});
+
+objRouter.delete("/:id", (req, res, next) => {
+    const objController = new controller();
+    objController.excluir(req, res, next);
+});
 
 export default objRouter;

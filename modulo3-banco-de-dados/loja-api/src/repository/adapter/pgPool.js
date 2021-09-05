@@ -1,19 +1,19 @@
 import pg from 'pg';
+export default class PgPool {
 
-class PgPool {
-    objConexao;
-
-    constructor(objConfigDB) {
+    constructor(objConfigDB, nomeEntidade) {
         const objPool = new pg.Pool({
             connectionString: `postgres://${objConfigDB.user}:${objConfigDB.password}@${objConfigDB.host}/${objConfigDB.database}`
         });
-        this.objConexao = objPool;
+
+        this._objConexao = objPool;
+        this._nomeEntidade = nomeEntidade;
     }
 
-    async buscar(entidade) {
-        const conn = await this.objConexao.connect();
+    async buscar() {
+        const conn = await this._objConexao.connect();
         try {
-            const res = await conn.query(this._montarSqlSelectPorFiltros(entidade, [], []));
+            const res = await conn.query(this._montarSqlSelectPorFiltros([], []));
 
             return res.rows;
         } catch (err) {
@@ -23,10 +23,10 @@ class PgPool {
         }
     }
 
-    async buscarPorId(entidade, id) {
-        const conn = await this.objConexao.connect();
+    async buscarPorId(id) {
+        const conn = await this._objConexao.connect();
         try {
-            const res = await conn.query(`SELECT * FROM ${entidade} WHERE ${entidade}_id = ${id}`);
+            const res = await conn.query(`SELECT * FROM ${this._nomeEntidade} WHERE ${this._nomeEntidade}_id = $1`, [id]);
 
             return res.rows[0];
         } catch (err) {
@@ -35,26 +35,13 @@ class PgPool {
             conn.release();
         }
     }
-    
-    async criar(entidade, obj) {
-        const conn = await this.objConexao.connect();
+
+    async criar(obj) {
+        const conn = await this._objConexao.connect();
         try {
             const dadosInserir = Object.values(obj);
-            const res = await conn.query(this._montarSqlInsert(entidade, obj), dadosInserir);
-            
-            return res.rows[0];
-        } catch (err) {
-            throw err;
-        } finally {
-            conn.release();
-        }
-    }
-    
-    async atualizar(entidade, obj, id) {
-        const conn = await this.objConexao.connect();
-        try {
-            const res = await conn.query(this._montarSqlUpdate(entidade, obj, id));
-            
+            const res = await conn.query(this._montarSqlInsert(obj), dadosInserir);
+
             return res.rows[0];
         } catch (err) {
             throw err;
@@ -63,10 +50,23 @@ class PgPool {
         }
     }
 
-    async excluir(entidade, id) {
-        const conn = await this.objConexao.connect();
+    async atualizar(obj, id) {
+        const conn = await this._objConexao.connect();
         try {
-            const res = await conn.query(`DELETE FROM ${entidade} WHERE ${entidade}_id = ${id}`);
+            const res = await conn.query(this._montarSqlUpdate(obj), [id]);
+
+            return res.rows[0];
+        } catch (err) {
+            throw err;
+        } finally {
+            conn.release();
+        }
+    }
+
+    async excluir(id) {
+        const conn = await this._objConexao.connect();
+        try {
+            const res = await conn.query(`DELETE FROM ${this._nomeEntidade} WHERE ${this._nomeEntidade}_id = $1`, [id]);
 
             return res.rows[0];
         } catch (err) {
@@ -81,16 +81,15 @@ class PgPool {
      * Os filtros serão de dois tipos somente: string (str), númerico (num) ou boolean (bool)
      * Os filtros devem vir nesse formato: [{campo: "nome_campo", tipo: "str", valor: "valor a ser procurado no campo"}]
      * 
-     * @param {string} entidade  Nome da entidade no banco de dados
      * @param {array} campos     Array com os campos que deverão ser retornados da entidade. Caso null, retornará todos os campos
      * @param {array} filtros    Array com os filtros para recuperar a entidade no banco de dados 
      * @returns string
      */
-    _montarSqlSelectPorFiltros(entidade, campos, filtros) {
+    _montarSqlSelectPorFiltros(campos, filtros) {
         try {
             const camposAux = (campos == undefined || campos.length == 0) ? '*' : campos.join(', ');
-            let strSelect = `SELECT ${camposAux} FROM ${entidade} WHERE 1=1 `;
-    
+            let strSelect = `SELECT ${camposAux} FROM ${this._nomeEntidade} WHERE 1=1 `;
+
             let countFiltros = filtros.length;
             if (countFiltros > 0) {
                 let arrFiltros = [];
@@ -108,7 +107,7 @@ class PgPool {
                 }
                 strSelect += `AND ${arrFiltros.join(' AND ')}`;
             }
-    
+
             return strSelect;
         } catch (err) {
             throw { status: 400, msg: '[adapter_error] ' + err.message }
@@ -117,21 +116,20 @@ class PgPool {
 
     /**
      * Método que monta dinamicamente o necessário para um INSERT
-     * @param {string} entidade     Nome da entidade no banco de dados
-     * @param {object} obj          Objeto contendo os dados da entidade para inserir
+     * @param {object} obj  Objeto contendo os dados da entidade para inserir
      * @returns string
      */
-    _montarSqlInsert(entidade, obj) {
+    _montarSqlInsert(obj) {
         try {
             const arrColunas = Object.keys(obj);
             const countColunas = arrColunas.length;
-    
-            let strInsert = `INSERT INTO ${entidade} (${arrColunas.join(', ')}) VALUES (`;
+
+            let strInsert = `INSERT INTO ${this._nomeEntidade} (${arrColunas.join(', ')}) VALUES (`;
             for (let i = 1; i <= countColunas; i++) {
                 strInsert += ((i < countColunas) ? `$${i}, ` : `$${i}`);
             }
             strInsert += `) RETURNING *`;
-    
+
             return strInsert;
         } catch (err) {
             throw { status: 400, msg: '[adapter_error] ' + err.message }
@@ -140,23 +138,22 @@ class PgPool {
 
     /**
      * Método que monta dinamicamente o necessário para um UPDATE
-     * @param {string} entidade     Nome da entidade no banco de dados
-     * @param {object} obj          Objeto contendo os dados da entidade para atualizar
-     * @param {number} id           ID da entidade para atualizar
+     * @param {object} obj  Objeto contendo os dados da entidade para atualizar
+     * @param {number} id   ID da entidade para atualizar
      * @returns string
      */
-    _montarSqlUpdate(entidade, obj, id) {
+    _montarSqlUpdate(obj, id) {
         try {
             const arrColunas = Object.keys(obj);
             const arrValores = Object.values(obj);
             const countColunas = arrColunas.length;
-    
+
             let arrAtualizar = [];
-            let strUpdate = `UPDATE ${entidade} SET `;
+            let strUpdate = `UPDATE ${this._nomeEntidade} SET `;
             for (let i = 0; i < countColunas; i++) {
                 arrAtualizar.push(`${arrColunas[i]}='${arrValores[i]}'`);
             }
-            strUpdate += arrAtualizar.join(', ') + ` WHERE ${entidade}_id=${id} RETURNING *`;
+            strUpdate += arrAtualizar.join(', ') + ` WHERE ${this._nomeEntidade}_id=$1 RETURNING *`;
             //console.log('sql:', strUpdate); return false;
 
             return strUpdate;
@@ -165,5 +162,3 @@ class PgPool {
         }
     }
 }
-
-export default PgPool;

@@ -1,26 +1,12 @@
-class PgSequelize {
-    /**
-     * Receberá a instância da config do Sequelize
-     */
-    objConexao;
+export default class PgSequelize {
 
-    constructor(objConfig) {
+    constructor(objConfigDB, nomeEntidade) {
         console.log('ENV: ' + process.env.NODE_ENV);
         console.log('ADAPTER: PgSequelize');
-        console.log('CONFIG: ', objConfig);
+        console.log('CONFIG: ', objConfigDB);
+        console.log('ENTIDADE: ', nomeEntidade);
 
-        /*if (this.objConexao !== undefined) {
-            return this.objConexao.connect();
-        }
 
-        const objPool = new pg.Pool({
-
-        });*/
-
-    }
-
-    async criar(obj) {
-        console.log("VOU CRIAR no PgSequelize", obj);
     }
 
     async buscar() {
@@ -30,6 +16,16 @@ class PgSequelize {
     async buscarPorId(id) {
         console.log("VOU BUSCAR por ID no PgSequelize");
     }
-}
 
-export default PgSequelize;
+    async criar(obj) {
+        console.log("VOU CRIAR no PgSequelize", obj);
+    }
+
+    async atualizar(obj, id) {
+        console.log("VOU ATUALIZAR no PgSequelize", obj);
+    }
+
+    async excluir(id) {
+        console.log("VOU EXCLUIR no PgSequelize", id);
+    }
+}
