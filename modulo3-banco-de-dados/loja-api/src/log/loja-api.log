@@ -416,3 +416,77 @@
 2021-09-05T02:20:11.531Z [loja-api] info PUT /fornecedores |  REQUEST: {"fornecedor_id":1,"nome":"Fornecedor 001 atualizado","cnpj":"546544643232","telefone":"98489-4545","email":"for001@gmail.com.br","endereco":"Rua Rosa, 61"}  |  RESPONSE: {"fornecedor_id":1,"nome":"Fornecedor 001 atualizado","cnpj":"546544643232","telefone":"98489-4545","email":"for001@gmail.com.br","endereco":"Rua Rosa, 61"}
 2021-09-05T02:21:04.419Z [loja-api] info POST /fornecedores |  REQUEST: {"nome":"Fornecedor 002","cnpj":"451232145214","telefone":"3333-1111","email":"for002@outlook.com","endereco":"Av. Atlântica, 100"}  |  RESPONSE: {"fornecedor_id":2,"nome":"Fornecedor 002","cnpj":"451232145214","telefone":"3333-1111","email":"for002@outlook.com","endereco":"Av. Atlântica, 100"}
 2021-09-05T02:21:26.814Z [loja-api] error DELETE /fornecedores/3 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 3 não localizado."}
+2021-09-05T04:13:57.368Z [loja-api] info API iniciada na porta 9902
+2021-09-05T04:14:04.209Z [loja-api] error GET /fornecedores |  REQUEST: {}  |  RESPONSE: {}
+2021-09-05T04:51:52.839Z [loja-api] info API iniciada na porta 9902
+2021-09-05T04:52:58.498Z [loja-api] info API iniciada na porta 9902
+2021-09-05T04:53:16.908Z [loja-api] error GET /fornecedores |  REQUEST: {}  |  RESPONSE: {}
+2021-09-05T05:11:46.783Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:12:07.603Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:12:12.180Z [loja-api] error GET /fornecedores |  REQUEST: {}  |  RESPONSE: {}
+2021-09-05T05:13:38.704Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:13:43.550Z [loja-api] error GET /fornecedores |  REQUEST: {}  |  RESPONSE: {}
+2021-09-05T05:20:29.179Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:20:38.670Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:21:26.583Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:23:05.982Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:23:16.991Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:24:31.769Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:25:42.193Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:26:29.235Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:26:41.173Z [loja-api] error GET /fornecedores/outraRota |  REQUEST: {}  |  RESPONSE: {}
+2021-09-05T05:27:08.889Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:39:33.281Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:39:45.808Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:40:06.855Z [loja-api] error GET /fornecedores/3 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 3 não localizado."}
+2021-09-05T05:40:19.591Z [loja-api] error PUT /fornecedores/1 |  REQUEST: {"fornecedor_id":1,"nome":"Fornecedor 001 alt","cnpj":"546544643232","telefone":"98489-4545","email":"for001@gmail.com.br","endereco":"Rua Rosa, 61"}  |  RESPONSE: {"status":404,"msg":"ID 1 não localizado."}
+2021-09-05T05:41:11.032Z [loja-api] info POST /fornecedores |  REQUEST: {"nome":"Fornecedor 001","cnpj":"215444546545","telefone":"3333-1111","email":"for001@outlook.com","endereco":"Av. Josué di bernardi, 2300"}  |  RESPONSE: {"fornecedor_id":3,"nome":"Fornecedor 001","cnpj":"215444546545","telefone":"3333-1111","email":"for001@outlook.com","endereco":"Av. Josué di bernardi, 2300"}
+2021-09-05T05:41:42.234Z [loja-api] info POST /fornecedores |  REQUEST: {"nome":"Fornecedor 003","cnpj":"215444546545","telefone":"9999-8545","email":"for003@outlook.com","endereco":"Rua Tenente Caminha, 99"}  |  RESPONSE: {"fornecedor_id":4,"nome":"Fornecedor 003","cnpj":"215444546545","telefone":"9999-8545","email":"for003@outlook.com","endereco":"Rua Tenente Caminha, 99"}
+2021-09-05T05:43:05.938Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:45:12.689Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:45:58.007Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:47:03.352Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:49:48.554Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:49:55.068Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:50:07.899Z [loja-api] error GET /fornecedores/1 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 1 não localizado."}
+2021-09-05T05:50:40.722Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:50:52.875Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:51:46.109Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:52:26.195Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:52:56.198Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:53:32.203Z [loja-api] error GET /produtos |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"Nenhum registro."}
+2021-09-05T05:53:44.132Z [loja-api] error PUT /produtos/1 |  REQUEST: {"fornecedor_id":1,"nome":"Fornecedor 001 alt","cnpj":"546544643232","telefone":"98489-4545","email":"for001@gmail.com.br","endereco":"Rua Rosa, 61"}  |  RESPONSE: {"status":404,"msg":"ID 1 não localizado."}
+2021-09-05T05:53:51.497Z [loja-api] error DELETE /produtos/1 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 1 não localizado."}
+2021-09-05T05:56:35.222Z [loja-api] error PUT /fornecedores/1 |  REQUEST: {"fornecedor_id":1,"nome":"Fornecedor 001","cnpj":"215444546545","telefone":"3333-1111","email":"for001@outlook.com","endereco":"Av. Josué di bernardi, 2300"}  |  RESPONSE: {"status":404,"msg":"ID 1 não localizado."}
+2021-09-05T05:56:41.477Z [loja-api] info PUT /fornecedores |  REQUEST: {"fornecedor_id":1,"nome":"Fornecedor 001","cnpj":"215444546545","telefone":"3333-1111","email":"for001@outlook.com","endereco":"Av. Josué di bernardi, 2300"}  |  RESPONSE: {"fornecedor_id":1,"nome":"Fornecedor 001","cnpj":"215444546545","telefone":"3333-1111","email":"for001@outlook.com","endereco":"Av. Josué di bernardi, 2300"}
+2021-09-05T05:56:43.398Z [loja-api] error PUT /fornecedores/3 |  REQUEST: {"fornecedor_id":1,"nome":"Fornecedor 001","cnpj":"215444546545","telefone":"3333-1111","email":"for001@outlook.com","endereco":"Av. Josué di bernardi, 2300"}  |  RESPONSE: {"status":404,"msg":"ID 3 não localizado."}
+2021-09-05T05:57:35.847Z [loja-api] info PUT /fornecedores |  REQUEST: {"fornecedor_id":3,"nome":"Fornecedor 003","cnpj":"215444546545","telefone":"9999-8545","email":"for003@outlook.com","endereco":"Rua Tenente Caminha, 99"}  |  RESPONSE: {"fornecedor_id":3,"nome":"Fornecedor 003","cnpj":"215444546545","telefone":"9999-8545","email":"for003@outlook.com","endereco":"Rua Tenente Caminha, 99"}
+2021-09-05T05:58:33.153Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:58:55.575Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:59:08.481Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:59:29.883Z [loja-api] info API iniciada na porta 9902
+2021-09-05T05:59:32.558Z [loja-api] error GET /fornecedores |  REQUEST: {}  |  RESPONSE: {}
+2021-09-05T05:59:59.950Z [loja-api] info API iniciada na porta 9902
+2021-09-05T06:00:30.653Z [loja-api] info API iniciada na porta 9902
+2021-09-05T06:00:48.164Z [loja-api] info API iniciada na porta 9902
+2021-09-05T06:01:05.209Z [loja-api] error GET /produtos |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"Nenhum registro."}
+2021-09-05T06:10:02.342Z [loja-api] info API iniciada na porta 9902
+2021-09-05T06:13:16.294Z [loja-api] info API iniciada na porta 9902
+2021-09-05T06:13:47.743Z [loja-api] info API iniciada na porta 9902
+2021-09-05T06:15:17.843Z [loja-api] error POST /produtos |  REQUEST: {"fornecedor_id":1,"nome":"Produto 001 - Fornecedor 001","descricao":"Produto 001 que é vendido pelo Fornecedor 001","valor":18.99,"estoque":"Ä"}  |  RESPONSE: {"status":400,"msg":["Atributo 'estoque' inválido."]}
+2021-09-05T06:15:31.755Z [loja-api] info POST /produtos |  REQUEST: {"fornecedor_id":1,"nome":"Produto 001 - Fornecedor 001","descricao":"Produto 001 que é vendido pelo Fornecedor 001","valor":18.99,"estoque":50}  |  RESPONSE: {"produto_id":1,"fornecedor_id":1,"nome":"Produto 001 - Fornecedor 001","descricao":"Produto 001 que é vendido pelo Fornecedor 001","valor":"18.99","estoque":50}
+2021-09-05T06:18:01.360Z [loja-api] info API iniciada na porta 9902
+2021-09-05T06:18:12.825Z [loja-api] error POST /produtos |  REQUEST: {"fornecedor_id":6,"nome":"Produto 001 - Fornecedor 001","descricao":"Produto 001 que é vendido pelo Fornecedor 001","valor":18.99,"estoque":50}  |  RESPONSE: {"length":247,"name":"error","severity":"ERROR","code":"23503","detail":"Key (fornecedor_id)=(6) is not present in table \"fornecedor\".","schema":"public","table":"produto","constraint":"fk_fornecedor","file":"ri_triggers.c","line":"2772","routine":"ri_ReportViolation"}
+2021-09-05T06:19:49.465Z [loja-api] info API iniciada na porta 9902
+2021-09-05T06:19:53.453Z [loja-api] error POST /produtos |  REQUEST: {"fornecedor_id":6,"nome":"Produto 001 - Fornecedor 001","descricao":"Produto 001 que é vendido pelo Fornecedor 001","valor":18.99,"estoque":50}  |  RESPONSE: {"status":400,"msg":false}
+2021-09-05T06:20:11.983Z [loja-api] info API iniciada na porta 9902
+2021-09-05T06:20:14.478Z [loja-api] error POST /produtos |  REQUEST: {"fornecedor_id":6,"nome":"Produto 001 - Fornecedor 001","descricao":"Produto 001 que é vendido pelo Fornecedor 001","valor":18.99,"estoque":50}  |  RESPONSE: {"status":404,"msg":"ID 6 não localizado."}
+2021-09-05T06:23:30.033Z [loja-api] info API iniciada na porta 9902
+2021-09-05T06:23:33.815Z [loja-api] error POST /produtos |  REQUEST: {"fornecedor_id":6,"nome":"Produto 001 - Fornecedor 001","descricao":"Produto 001 que é vendido pelo Fornecedor 001","valor":18.99,"estoque":50}  |  RESPONSE: {"status":400,"msg":false}
+2021-09-05T06:24:13.518Z [loja-api] info API iniciada na porta 9902
+2021-09-05T06:24:16.256Z [loja-api] error POST /produtos |  REQUEST: {"fornecedor_id":6,"nome":"Produto 001 - Fornecedor 001","descricao":"Produto 001 que é vendido pelo Fornecedor 001","valor":18.99,"estoque":50}  |  RESPONSE: {"status":400,"msg":["Atributo 'fornecedor_id' não existe."]}
+2021-09-05T06:25:10.474Z [loja-api] info POST /produtos |  REQUEST: {"fornecedor_id":1,"nome":"Produto 002 - Fornecedor 001","descricao":"Produto 002 que é vendido pelo Fornecedor 001","valor":22.99,"estoque":30}  |  RESPONSE: {"produto_id":3,"fornecedor_id":1,"nome":"Produto 002 - Fornecedor 001","descricao":"Produto 002 que é vendido pelo Fornecedor 001","valor":"22.99","estoque":30}
+2021-09-05T06:26:10.929Z [loja-api] info POST /produtos |  REQUEST: {"fornecedor_id":2,"nome":"Produto 001 - Fornecedor 002","descricao":"Produto 001 que é vendido pelo Fornecedor 002","valor":45.86,"estoque":40}  |  RESPONSE: {"produto_id":4,"fornecedor_id":2,"nome":"Produto 001 - Fornecedor 002","descricao":"Produto 001 que é vendido pelo Fornecedor 002","valor":"45.86","estoque":40}
+2021-09-05T06:26:33.697Z [loja-api] info POST /produtos |  REQUEST: {"fornecedor_id":2,"nome":"Produto 002 - Fornecedor 002","descricao":"Produto 002 que é vendido pelo Fornecedor 002","valor":41.77,"estoque":50}  |  RESPONSE: {"produto_id":5,"fornecedor_id":2,"nome":"Produto 002 - Fornecedor 002","descricao":"Produto 002 que é vendido pelo Fornecedor 002","valor":"41.77","estoque":50}
+2021-09-05T06:27:00.661Z [loja-api] info POST /produtos |  REQUEST: {"fornecedor_id":2,"nome":"Produto 003 - Fornecedor 002","descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":19.3,"estoque":60}  |  RESPONSE: {"produto_id":6,"fornecedor_id":2,"nome":"Produto 003 - Fornecedor 002","descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":"19.3","estoque":60}
+2021-09-05T06:27:06.891Z [loja-api] error POST /produtos |  REQUEST: {"fornecedor_id":5,"nome":"Produto 003 - Fornecedor 002","descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":19.3,"estoque":60}  |  RESPONSE: {"status":400,"msg":["Atributo 'fornecedor_id' não existe."]}

@@ -3,7 +3,7 @@ import FornecedorRepository from "../repository/Fornecedor.js";
 export default class FornecedorService extends BaseService {
 
     constructor() {
-        super(new FornecedorRepository);
+        super(new FornecedorRepository());
     }
 
     /**

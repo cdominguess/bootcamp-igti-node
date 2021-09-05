@@ -107,6 +107,7 @@ export default class PgPool {
                 }
                 strSelect += `AND ${arrFiltros.join(' AND ')}`;
             }
+            strSelect += ` ORDER BY ${this._nomeEntidade}_id`;
 
             return strSelect;
         } catch (err) {

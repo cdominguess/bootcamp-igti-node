@@ -1,7 +1,8 @@
-import objSercice from '../service/Produto.js';
+import BaseControler from "./Base.js";
+import ProdutoService from "../service/Produto.js";
+export default class ProdutoControler extends BaseControler {
 
-class ProdutoControler {
-
+    constructor() {
+        super(new ProdutoService());
+    }
 }
-
-export default new ProdutoControler();
