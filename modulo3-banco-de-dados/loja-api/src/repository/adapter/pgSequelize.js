@@ -19,8 +19,16 @@ class PgSequelize {
 
     }
 
-    criar(objeto) {
-        console.log("VOU CRIAR no PgSequelize", objeto);
+    async criar(obj) {
+        console.log("VOU CRIAR no PgSequelize", obj);
+    }
+
+    async buscar() {
+        console.log("VOU BUSCAR no PgSequelize");
+    }
+
+    async buscarPorId(id) {
+        console.log("VOU BUSCAR por ID no PgSequelize");
     }
 }
 

@@ -98,3 +98,238 @@
 2021-09-04T02:53:57.191Z [loja-api] info API iniciada na porta 9902
 2021-09-04T02:54:00.224Z [loja-api] info API iniciada na porta 9902
 2021-09-04T02:54:31.913Z [loja-api] info API iniciada na porta 9902
+2021-09-04T02:58:52.311Z [loja-api] info API iniciada na porta 9902
+2021-09-04T18:12:49.208Z [loja-api] info API iniciada na porta 9902
+2021-09-04T18:12:55.503Z [loja-api] error POST  |  REQUEST: {"nome":"Sílvia Laura Jardin","cpf":"234.123.870-22","telefone":"98489-4545","email":"silvia@gmail.com","endereco":"Rua 12, 199 - Estreito - Florianópolis SC"}  |  RESPONSE: {"length":90,"name":"error","severity":"ERROR","code":"42601","position":"13","file":"scan.l","line":"1129","routine":"scanner_yyerror"}
+2021-09-04T18:14:22.470Z [loja-api] info API iniciada na porta 9902
+2021-09-04T18:14:25.948Z [loja-api] error POST  |  REQUEST: {"nome":"Sílvia Laura Jardin","cpf":"234.123.870-22","telefone":"98489-4545","email":"silvia@gmail.com","endereco":"Rua 12, 199 - Estreito - Florianópolis SC"}  |  RESPONSE: {"length":90,"name":"error","severity":"ERROR","code":"42601","position":"13","file":"scan.l","line":"1129","routine":"scanner_yyerror"}
+2021-09-04T18:15:55.741Z [loja-api] info API iniciada na porta 9902
+2021-09-04T18:15:59.035Z [loja-api] error POST  |  REQUEST: {"nome":"Sílvia Laura Jardin","cpf":"234.123.870-22","telefone":"98489-4545","email":"silvia@gmail.com","endereco":"Rua 12, 199 - Estreito - Florianópolis SC"}  |  RESPONSE: {"length":90,"name":"error","severity":"ERROR","code":"42601","position":"13","file":"scan.l","line":"1129","routine":"scanner_yyerror"}
+2021-09-04T18:16:34.543Z [loja-api] info API iniciada na porta 9902
+2021-09-04T18:16:37.879Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Sílvia Laura Jardin","cpf":"234.123.870-22","telefone":"98489-4545","email":"silvia@gmail.com","endereco":"Rua 12, 199 - Estreito - Florianópolis SC"}  |  RESPONSE: {"cliente_id":3,"nome":"Sílvia Laura Jardin","cpf":"234.123.870-22","telefone":"98489-4545","email":"silvia@gmail.com","endereco":"Rua 12, 199 - Estreito - Florianópolis SC"}
+2021-09-04T18:17:13.927Z [loja-api] info API iniciada na porta 9902
+2021-09-04T18:27:08.208Z [loja-api] info API iniciada na porta 9902
+2021-09-04T18:32:52.493Z [loja-api] info API iniciada na porta 9902
+2021-09-04T18:33:18.091Z [loja-api] info API iniciada na porta 9902
+2021-09-04T18:33:31.050Z [loja-api] info API iniciada na porta 9902
+2021-09-04T18:33:55.847Z [loja-api] info API iniciada na porta 9902
+2021-09-04T18:34:32.117Z [loja-api] info API iniciada na porta 9902
+2021-09-04T18:58:35.654Z [loja-api] info API iniciada na porta 9902
+2021-09-04T18:58:49.576Z [loja-api] info API iniciada na porta 9902
+2021-09-04T18:59:22.071Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:00:24.709Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:00:59.460Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:01:18.412Z [loja-api] error GET  |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T19:01:38.972Z [loja-api] error GET  |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T19:02:07.735Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:02:10.973Z [loja-api] error GET  |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T19:02:36.980Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:03:44.387Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:04:36.584Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:04:47.659Z [loja-api] error GET  |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T19:05:18.469Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:06:43.937Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:06:51.991Z [loja-api] error GET  |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T19:07:13.978Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:07:34.173Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:07:37.195Z [loja-api] error GET  |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T19:08:22.671Z [loja-api] error GET  |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T19:08:31.965Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:08:34.298Z [loja-api] error GET  |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T19:09:27.624Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:09:29.951Z [loja-api] error GET  |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T19:09:47.825Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:10:02.681Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:10:06.139Z [loja-api] error GET  |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T19:10:57.775Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:11:27.974Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:11:30.489Z [loja-api] error GET  |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T19:12:36.026Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:12:48.479Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:12:51.966Z [loja-api] error GET  |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T19:13:13.075Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:13:45.988Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:13:48.087Z [loja-api] error GET  |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T19:14:56.638Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:15:13.646Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:16:00.093Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:42:20.262Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:44:26.425Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:45:11.769Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:46:47.364Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:46:50.399Z [loja-api] error GET  |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"cliente com ID 5 não localizado."}
+2021-09-04T19:48:37.304Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:48:42.436Z [loja-api] error GET  |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"cliente com ID 5 não localizado."}
+2021-09-04T19:50:51.164Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:50:57.660Z [loja-api] error GET  |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"cliente com ID 5 não localizado."}
+2021-09-04T19:52:16.936Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:52:20.521Z [loja-api] error GET /clientes/5 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"cliente com ID 5 não localizado."}
+2021-09-04T19:55:33.892Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:57:11.560Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:57:18.465Z [loja-api] error GET /clientes |  REQUEST: {}  |  RESPONSE: {"status":400,"msg":{}}
+2021-09-04T19:58:01.203Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:58:03.421Z [loja-api] error GET /clientes |  REQUEST: {}  |  RESPONSE: {"status":400,"msg":"Cannot read property 'length' of undefined"}
+2021-09-04T19:58:38.616Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:58:57.479Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:59:33.603Z [loja-api] info API iniciada na porta 9902
+2021-09-04T19:59:50.297Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:09:39.319Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:11:08.575Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:11:40.911Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:12:34.157Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:12:46.043Z [loja-api] error GET /clientes/5 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T20:13:21.089Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:13:24.241Z [loja-api] error GET /clientes/5 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T20:13:50.511Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:14:19.182Z [loja-api] error GET /clientes/5 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T20:15:00.796Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:15:03.263Z [loja-api] error GET /clientes/5 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 5 não localizado."}
+2021-09-04T20:15:25.940Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:15:46.744Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:16:00.947Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:32:05.616Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:33:30.216Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:35:12.479Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:39:05.255Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:39:42.175Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:40:18.490Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:41:03.502Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:41:38.641Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:41:47.987Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:42:24.219Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:45:41.629Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:45:45.245Z [loja-api] error PUT /clientes/2 |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: {}
+2021-09-04T20:46:14.024Z [loja-api] error PUT /clientes/2 |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: {}
+2021-09-04T20:46:19.386Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:46:21.702Z [loja-api] error PUT /clientes/2 |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: {}
+2021-09-04T20:46:44.528Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:47:04.844Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:47:07.643Z [loja-api] error PUT /clientes/2 |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: {}
+2021-09-04T20:52:48.743Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:52:53.211Z [loja-api] error PUT /clientes/2 |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: {}
+2021-09-04T20:53:46.173Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:53:50.859Z [loja-api] error PUT /clientes/2 |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: {}
+2021-09-04T20:54:40.958Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:54:45.337Z [loja-api] error PUT /clientes/2 |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: {}
+2021-09-04T20:55:30.934Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:56:06.214Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:56:21.159Z [loja-api] info API iniciada na porta 9902
+2021-09-04T20:57:11.931Z [loja-api] info API iniciada na porta 9902
+2021-09-04T21:03:02.423Z [loja-api] info API iniciada na porta 9902
+2021-09-04T21:03:16.962Z [loja-api] info API iniciada na porta 9902
+2021-09-04T21:07:44.907Z [loja-api] info API iniciada na porta 9902
+2021-09-04T21:07:50.941Z [loja-api] info PUT /clientes |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: false
+2021-09-04T21:07:59.663Z [loja-api] error PUT /clientes/5 |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: {"status":404,"msg":"ID 5 não localizado."}
+2021-09-04T21:08:26.659Z [loja-api] info API iniciada na porta 9902
+2021-09-04T21:08:30.298Z [loja-api] error PUT /clientes/5 |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: {"status":404,"msg":"ID 5 não localizado."}
+2021-09-04T21:08:35.492Z [loja-api] info PUT /clientes |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: false
+2021-09-04T21:10:33.031Z [loja-api] info API iniciada na porta 9902
+2021-09-04T21:10:36.616Z [loja-api] info PUT /clientes |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: false
+2021-09-04T21:10:41.724Z [loja-api] info PUT /clientes |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: false
+2021-09-04T21:11:37.625Z [loja-api] info API iniciada na porta 9902
+2021-09-04T21:11:39.853Z [loja-api] error PUT /clientes/5 |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: {"status":404,"msg":"ID 5 não localizado."}
+2021-09-04T21:11:47.789Z [loja-api] error PUT /clientes/2 |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: {}
+2021-09-04T21:12:31.913Z [loja-api] info API iniciada na porta 9902
+2021-09-04T21:12:49.373Z [loja-api] error PUT /clientes/5 |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: {"status":404,"msg":"ID 5 não localizado."}
+2021-09-04T21:12:58.313Z [loja-api] error PUT /clientes/2 |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: {}
+2021-09-04T21:18:06.344Z [loja-api] info API iniciada na porta 9902
+2021-09-04T21:18:57.313Z [loja-api] info API iniciada na porta 9902
+2021-09-04T21:19:23.824Z [loja-api] info PUT /clientes |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: false
+2021-09-04T21:20:13.682Z [loja-api] info API iniciada na porta 9902
+2021-09-04T21:20:25.491Z [loja-api] info PUT /clientes |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com","endereco":"Rua X, 11"}  |  RESPONSE: false
+2021-09-04T21:21:47.878Z [loja-api] info API iniciada na porta 9902
+2021-09-04T21:22:11.514Z [loja-api] info PUT /clientes |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com.br","endereco":"Rua X, 12"}  |  RESPONSE: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com.br","endereco":"Rua X, 12"}
+2021-09-04T21:28:10.827Z [loja-api] info API iniciada na porta 9902
+2021-09-04T21:30:12.223Z [loja-api] info API iniciada na porta 9902
+2021-09-04T21:31:51.332Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:09:19.192Z [loja-api] info PUT /clientes |  REQUEST: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com.br","endereco":"Rua X, 12"}  |  RESPONSE: {"cliente_id":2,"nome":"João Dias","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com.br","endereco":"Rua X, 12"}
+2021-09-04T22:09:30.901Z [loja-api] error GET /clientes/5 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 5 não localizado."}
+2021-09-04T22:10:40.729Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:10:47.303Z [loja-api] error GET /clientes/5 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 5 não localizado."}
+2021-09-04T22:11:12.626Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:11:30.068Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:16:39.608Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:18:39.497Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:19:14.431Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:19:57.165Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:20:11.102Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:20:29.840Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:21:20.625Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:22:20.213Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:22:55.841Z [loja-api] error GET /clientes/6 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T22:23:03.727Z [loja-api] error GET /clientes/6 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T22:23:06.936Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T22:25:06.499Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:25:58.299Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:26:18.247Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:26:59.959Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:27:36.039Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:27:39.006Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T22:27:49.639Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:27:52.607Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T22:28:47.160Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:28:49.557Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T22:29:35.844Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:29:38.134Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T22:31:01.900Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:31:07.735Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T22:31:09.581Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T22:31:33.475Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:31:54.719Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T22:33:43.099Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:33:55.052Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T22:34:37.688Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:36:04.769Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:37:01.360Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:37:03.765Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T22:37:50.152Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:37:53.211Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T22:39:11.888Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:39:15.411Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T22:51:44.296Z [loja-api] info API iniciada na porta 9902
+2021-09-04T22:55:20.931Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:01:54.949Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:02:50.363Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:20:21.569Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:20:37.698Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:22:34.337Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:22:37.096Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T23:26:03.529Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:26:13.619Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T23:26:33.628Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:26:44.723Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:26:47.591Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T23:27:33.874Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:27:36.405Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T23:28:23.986Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:28:36.343Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T23:38:46.429Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:38:55.082Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:39:02.177Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T23:40:06.725Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:40:09.968Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T23:40:59.637Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:41:03.441Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T23:41:28.990Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:41:31.405Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T23:48:54.363Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:48:57.723Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T23:54:46.478Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:54:51.154Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-04T23:55:14.580Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:58:06.153Z [loja-api] info API iniciada na porta 9902
+2021-09-04T23:58:18.808Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-05T00:00:42.432Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:01:11.941Z [loja-api] error GET /clientes/2 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-05T00:01:59.746Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:06:14.449Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:07:05.511Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:07:40.628Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:08:12.785Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:15:13.322Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:15:53.308Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:16:06.156Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:17:03.845Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:17:38.310Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:26:00.093Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:26:07.553Z [loja-api] error GET /clientes/5 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 5 não localizado."}

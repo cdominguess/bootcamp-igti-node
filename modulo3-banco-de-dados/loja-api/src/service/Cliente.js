@@ -1,43 +1,49 @@
 import objRepository from '../repository/Cliente.js';
 
-class ClienteService {
-    /**
-     * @param {object} objCliente 
-     * @returns object
-     */
-    async criar(objCliente) {
-        const retValidacao = await this._validarDados(objCliente);
+export default class ClienteService {
+    async buscar() {
+        const resultado = await objRepository.buscar();
+        if (resultado.length == 0) {
+            throw { status: 404, msg: `Nenhum registro.` }
+        }
+
+        return resultado;
+    }
+
+    async buscarPorId(id) {
+        console.log('buscando ID ' + id + ' em ClienteService');
+        const resultado = await objRepository.buscarPorId(id);
+        if (resultado == undefined) {
+            throw { status: 404, msg: `ID ${id} não localizado.` }
+        }
+
+        return resultado;
+    }
+
+    async criar(obj) {
+        const retValidacao = await this._validarDados(obj);
 
         if (retValidacao !== true) {
             throw { status: 400, msg: retValidacao }
         }
 
-        return await objRepository.criar(objCliente); 
+        return await objRepository.criar(obj);
     }
 
-    /**
-     * @param {integer} id 
-     * @param {object} objCliente 
-     * @returns object
-     */
-    async atualizar(id, objCliente) {
-        return await objRepository.atualizar(id, objCliente, false);
+    async atualizar(obj, id) {
+        if (await objRepository.buscarPorId(id) == undefined) {
+            throw { status: 404, msg: `ID ${id} não localizado.` }
+        }
+
+        return await objRepository.atualizar(obj, id);
     }
 
-    /**
-     * @param {integer} id 
-     * @returns object
-     */
     async excluir(id) {
-        return await objRepository.excluir(id);
-    }
+        if (await objRepository.buscarPorId(id) == undefined) {
+            throw { status: 404, msg: `ID ${id} não localizado.` }
+        }
 
-    /**
-     * @param {integer} id 
-     * @returns object
-     */
-    async consultarPorId(id) {
-        return await objRepository.consultarPorId(id);
+        return await objRepository.excluir(id);
     }
 
     /**
@@ -47,7 +53,7 @@ class ClienteService {
      */
     async _validarDados(objCliente) {
         let arrErros = [];
-        
+
         if (objCliente.nome === undefined || objCliente.nome.length < 3) {
             arrErros.push("Atributo 'nome' inválido.");
         }
@@ -59,7 +65,7 @@ class ClienteService {
         if (objCliente.telefone === undefined || objCliente.telefone.length < 9) {
             arrErros.push("Atributo 'telefone' inválido.");
         }
-        
+
         if (objCliente.email === undefined || objCliente.email.length < 7 || objCliente.email.indexOf('@') === -1) {
             arrErros.push("Atributo 'email' inválido.");
         }
@@ -76,4 +82,4 @@ class ClienteService {
     }
 }
 
-export default new ClienteService();
+//export default new ClienteService();

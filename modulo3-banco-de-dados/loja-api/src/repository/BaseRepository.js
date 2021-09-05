@@ -7,18 +7,22 @@ import config from "../config.js";
  * Este parâmetro está definido no arquivo de configurações da aplicação 
  */
 export default class BaseRepository {
+    // Adaptador de acesso ao banco de dados
     adapter;
+
+    // Nome da entidade que será manipulada
+    entidade;
 
     /**
      * Contrutor da classe para quando algum repositório for instanciado já definir o adapter do banco
      */
     constructor() {
-        const objConfig = (process.env.NODE_ENV === 'production') ? config.dbProd : config.dbDev;
+        const objConfigDB = (process.env.NODE_ENV === 'production') ? config.dbProd : config.dbDev;
         
         if (config.adapter === 'pgPool') {
-            this.adapter = new pgPool(objConfig);
+            this.adapter = new pgPool(objConfigDB);
         } else {
-            this.adapter = new pgSequelize(objConfig);
+            this.adapter = new pgSequelize(objConfigDB);
         }
     }
 }

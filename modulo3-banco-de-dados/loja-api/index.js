@@ -40,7 +40,10 @@ app.use('/vendas', VendaRoute);
 
 // Tratamento genérico de erros de qualquer rota
 app.use((err, req, res, next) => {
-    logger.error(`${req.method} ${req.baseUrl} |  REQUEST: ${JSON.stringify(req.body)}  |  RESPONSE: ${JSON.stringify(err)}`);
+    console.log(err);
+
+    const urlAux = (req.baseUrl != '') ? req.baseUrl : req.originalUrl;
+    logger.error(`${req.method} ${urlAux} |  REQUEST: ${JSON.stringify(req.body)}  |  RESPONSE: ${JSON.stringify(err)}`);
 
     let status = err.status || 400;
     res.status(status).send({ success: false, msg: err.msg });
