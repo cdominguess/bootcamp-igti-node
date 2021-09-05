@@ -38,4 +38,8 @@ export default class BaseRepository {
     async excluir(id) {
         return await this.adapter.excluir(id);
     }
+
+    async filtrar(arrCampos, arrFiltros) {
+        return await this.adapter.filtrar(arrCampos, arrFiltros);
+    }
 }

@@ -17,30 +17,29 @@ export default class ProdutoService extends BaseService {
      async _validarDados(obj) {
         let arrErros = [];
 
-        
-        if (obj.fornecedor_id === undefined) {
-            arrErros.push("Atributo 'fornecedor_id' não informado.");
-        }
-        
-        const fornecedorRepository = new FornecedorRepository();
-        if (await fornecedorRepository.buscarPorId(obj.fornecedor_id) == undefined) {
-            arrErros.push("Atributo 'fornecedor_id' não existe.");
+        if (obj.fornecedor_id === undefined || isNaN(obj.fornecedor_id)) {
+            arrErros.push("O atributo 'fornecedor_id' não foi informado ou é inválido.");
+        } else {
+            const fornecedorRepository = new FornecedorRepository();
+            if (await fornecedorRepository.buscarPorId(obj.fornecedor_id) == undefined) {
+                arrErros.push("O atributo 'fornecedor_id' informado não existe.");
+            }
         }
 
         if (obj.nome === undefined || obj.nome.length < 3) {
-            arrErros.push("Atributo 'nome' inválido.");
+            arrErros.push("O atributo 'nome' é inválido.");
         }
 
         if (obj.descricao === undefined || obj.descricao.length < 10) {
-            arrErros.push("Atributo 'descricao' inválido.");
+            arrErros.push("O atributo 'descricao' é inválido.");
         }
 
         if (obj.valor === undefined || isNaN(obj.valor)) {
-            arrErros.push("Atributo 'valor' inválido.");
+            arrErros.push("O atributo 'valor' é inválido.");
         }
 
         if (obj.estoque === undefined || isNaN(obj.estoque)) {
-            arrErros.push("Atributo 'estoque' inválido.");
+            arrErros.push("O atributo 'estoque' é inválido.");
         }
 
         if (arrErros.length > 0) {

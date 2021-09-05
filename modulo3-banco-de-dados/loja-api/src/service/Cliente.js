@@ -18,23 +18,23 @@ export default class ClienteService extends BaseService {
         let arrErros = [];
 
         if (objCliente.nome === undefined || objCliente.nome.length < 3) {
-            arrErros.push("Atributo 'nome' inválido.");
+            arrErros.push("O atributo 'nome' é inválido.");
         }
 
         if (objCliente.cpf === undefined || objCliente.cpf.length < 11) {
-            arrErros.push("Atributo 'cpf' inválido.");
+            arrErros.push("O atributo 'cpf' é inválido.");
         }
 
         if (objCliente.telefone === undefined || objCliente.telefone.length < 9) {
-            arrErros.push("Atributo 'telefone' inválido.");
+            arrErros.push("O atributo 'telefone' é inválido.");
         }
 
         if (objCliente.email === undefined || objCliente.email.length < 7 || objCliente.email.indexOf('@') === -1) {
-            arrErros.push("Atributo 'email' inválido.");
+            arrErros.push("O atributo 'email' é inválido.");
         }
 
         if (objCliente.endereco === undefined || objCliente.endereco.length < 10) {
-            arrErros.push("Atributo 'endereco' inválido.");
+            arrErros.push("O atributo 'endereco' é inválido.");
         }
 
         if (arrErros.length > 0) {

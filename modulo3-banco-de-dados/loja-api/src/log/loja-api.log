@@ -490,3 +490,130 @@
 2021-09-05T06:26:33.697Z [loja-api] info POST /produtos |  REQUEST: {"fornecedor_id":2,"nome":"Produto 002 - Fornecedor 002","descricao":"Produto 002 que é vendido pelo Fornecedor 002","valor":41.77,"estoque":50}  |  RESPONSE: {"produto_id":5,"fornecedor_id":2,"nome":"Produto 002 - Fornecedor 002","descricao":"Produto 002 que é vendido pelo Fornecedor 002","valor":"41.77","estoque":50}
 2021-09-05T06:27:00.661Z [loja-api] info POST /produtos |  REQUEST: {"fornecedor_id":2,"nome":"Produto 003 - Fornecedor 002","descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":19.3,"estoque":60}  |  RESPONSE: {"produto_id":6,"fornecedor_id":2,"nome":"Produto 003 - Fornecedor 002","descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":"19.3","estoque":60}
 2021-09-05T06:27:06.891Z [loja-api] error POST /produtos |  REQUEST: {"fornecedor_id":5,"nome":"Produto 003 - Fornecedor 002","descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":19.3,"estoque":60}  |  RESPONSE: {"status":400,"msg":["Atributo 'fornecedor_id' não existe."]}
+2021-09-05T18:20:21.198Z [loja-api] info API iniciada na porta 9902
+2021-09-05T18:26:40.591Z [loja-api] info API iniciada na porta 9902
+2021-09-05T18:27:17.950Z [loja-api] info API iniciada na porta 9902
+2021-09-05T18:47:45.894Z [loja-api] info API iniciada na porta 9902
+2021-09-05T18:48:47.017Z [loja-api] info API iniciada na porta 9902
+2021-09-05T18:49:00.625Z [loja-api] info API iniciada na porta 9902
+2021-09-05T18:52:03.365Z [loja-api] info API iniciada na porta 9902
+2021-09-05T18:53:00.849Z [loja-api] info API iniciada na porta 9902
+2021-09-05T18:53:23.676Z [loja-api] error GET /vendas |  REQUEST: {}  |  RESPONSE: {}
+2021-09-05T18:54:21.274Z [loja-api] info API iniciada na porta 9902
+2021-09-05T18:54:27.129Z [loja-api] error GET /vendas |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"Nenhum registro."}
+2021-09-05T18:54:37.748Z [loja-api] error PUT /vendas/1 |  REQUEST: {"fornecedor_id":1,"nome":"Fornecedor 001 alt","cnpj":"546544643232","telefone":"98489-4545","email":"for001@gmail.com.br","endereco":"Rua Rosa, 61"}  |  RESPONSE: {"status":404,"msg":"ID 1 não localizado."}
+2021-09-05T18:54:44.340Z [loja-api] error DELETE /vendas/1 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 1 não localizado."}
+2021-09-05T18:54:52.953Z [loja-api] error POST /vendas |  REQUEST: {"fornecedor_id":3,"nome":"Produto 003 - Fornecedor 002","descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":19.3,"estoque":60}  |  RESPONSE: {"status":400,"msg":false}
+2021-09-05T18:58:02.201Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:02:33.251Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:02:54.875Z [loja-api] error POST /vendas |  REQUEST: {"fornecedor_id":3,"nome":"Produto 003 - Fornecedor 002","descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":19.3,"estoque":60}  |  RESPONSE: {"status":400,"msg":false}
+2021-09-05T19:04:48.266Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:04:52.466Z [loja-api] error POST /vendas |  REQUEST: {"fornecedor_id":3,"nome":"Produto 003 - Fornecedor 002","descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":19.3,"estoque":60}  |  RESPONSE: {"length":109,"name":"error","severity":"ERROR","code":"42703","position":"43","file":"parse_relation.c","line":"3284","routine":"errorMissingColumn"}
+2021-09-05T19:05:32.528Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:05:36.158Z [loja-api] error POST /vendas |  REQUEST: {"fornecedor_id":3,"nome":"Produto 003 - Fornecedor 002","descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":19.3,"estoque":60}  |  RESPONSE: {"length":109,"name":"error","severity":"ERROR","code":"42703","position":"43","file":"parse_relation.c","line":"3284","routine":"errorMissingColumn"}
+2021-09-05T19:06:22.577Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:06:27.866Z [loja-api] error POST /vendas |  REQUEST: {"fornecedor_id":3,"nome":"Produto 003 - Fornecedor 002","descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":19.3,"estoque":60}  |  RESPONSE: {"length":109,"name":"error","severity":"ERROR","code":"42703","position":"43","file":"parse_relation.c","line":"3284","routine":"errorMissingColumn"}
+2021-09-05T19:07:11.679Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:07:15.731Z [loja-api] error POST /vendas |  REQUEST: {"fornecedor_id":3,"nome":"Produto 003 - Fornecedor 002","descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":19.3,"estoque":60}  |  RESPONSE: {"status":400,"msg":["O 'cliente_id' informado não existe.","Atributo 'produto_id' não informado.","O 'produto_id' informado não existe."]}
+2021-09-05T19:08:39.672Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:08:58.214Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:09:09.571Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:10:20.959Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:10:27.728Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:11:18.272Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:12:07.972Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:12:18.880Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":3,"nome":"Produto 003 - Fornecedor 002","descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":19.3,"estoque":60}  |  RESPONSE: {"status":400,"msg":["O atributo 'cliente_id' informado não existe.","O atributo 'produto_id' não foi informado.","O atributo 'produto_id' informado não existe."]}
+2021-09-05T19:13:03.465Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":3,"produto_id":"Produto 003 - Fornecedor 002","descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":19.3,"estoque":60}  |  RESPONSE: {"length":117,"name":"error","severity":"ERROR","code":"22P02","file":"numutils.c","line":"59","routine":"pg_atoi"}
+2021-09-05T19:15:26.758Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:15:34.335Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:15:38.479Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":3,"produto_id":"Produto 003 - Fornecedor 002","descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":19.3,"estoque":60}  |  RESPONSE: {"status":400,"msg":["O atributo 'cliente_id' informado não existe.","O atributo 'produto_id' não foi informado ou é inválido."]}
+2021-09-05T19:15:50.903Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":3,"produto_id":2,"descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":19.3,"estoque":60}  |  RESPONSE: {"status":400,"msg":["O atributo 'cliente_id' informado não existe.","O atributo 'produto_id' informado não existe."]}
+2021-09-05T19:15:58.256Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":3,"produto_id":1,"descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":19.3,"estoque":60}  |  RESPONSE: {"status":400,"msg":["O atributo 'cliente_id' informado não existe."]}
+2021-09-05T19:16:31.671Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":3,"produto_id":1,"descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":19.3,"estoque":60}  |  RESPONSE: {"status":400,"msg":["O atributo 'cliente_id' informado não existe."]}
+2021-09-05T19:16:37.189Z [loja-api] error POST /vendas |  REQUEST: {}  |  RESPONSE: {"expose":true,"statusCode":400,"status":400,"body":"{\n\t\"cliente_id\": 1,\n\t\"produto_id\": 1,\n\t\"descricao\": \"Produto 003 que é vendido pelo Fornecedor 002\",\n\t\"valor\": 19.s3,\n\t\"estoque\": 60\n}","type":"entity.parse.failed"}
+2021-09-05T19:19:09.200Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:19:18.761Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:19:29.283Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:19:35.539Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:19:46.494Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:19:57.277Z [loja-api] error POST /vendas |  REQUEST: {}  |  RESPONSE: {"expose":true,"statusCode":400,"status":400,"body":"{\n\t\"cliente_id\": 1,\n\t\"produto_id\": 1,\n\t\"descricao\": \"Produto 003 que é vendido pelo Fornecedor 002\",\n\t\"valor\": 19.s3,\n\t\"estoque\": 60\n}","type":"entity.parse.failed"}
+2021-09-05T19:20:07.370Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"descricao":"Produto 003 que é vendido pelo Fornecedor 002","valor":19.3,"estoque":60}  |  RESPONSE: {}
+2021-09-05T19:20:41.427Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3,"estoque":60}  |  RESPONSE: {}
+2021-09-05T19:21:09.966Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:21:40.265Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:21:44.870Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3,"estoque":60}  |  RESPONSE: {"length":109,"name":"error","severity":"ERROR","code":"42703","position":"43","file":"parse_relation.c","line":"3284","routine":"errorMissingColumn"}
+2021-09-05T19:22:40.002Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3,"estoque":60}  |  RESPONSE: {"length":109,"name":"error","severity":"ERROR","code":"42703","position":"43","file":"parse_relation.c","line":"3284","routine":"errorMissingColumn"}
+2021-09-05T19:23:16.645Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:23:20.490Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3,"estoque":60}  |  RESPONSE: {"length":109,"name":"error","severity":"ERROR","code":"42703","position":"43","file":"parse_relation.c","line":"3284","routine":"errorMissingColumn"}
+2021-09-05T19:23:51.360Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:23:55.922Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:24:00.108Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3,"estoque":60}  |  RESPONSE: {"status":400,"msg":false}
+2021-09-05T19:24:43.924Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:25:59.248Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:26:03.542Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3,"estoque":60}  |  RESPONSE: {}
+2021-09-05T19:26:23.900Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:26:27.520Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3,"estoque":60}  |  RESPONSE: {}
+2021-09-05T19:26:35.528Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:26:38.459Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3,"estoque":60}  |  RESPONSE: {}
+2021-09-05T19:27:29.121Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:27:33.109Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3,"estoque":60}  |  RESPONSE: {"status":400,"msg":false}
+2021-09-05T19:27:57.498Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:28:00.818Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3,"estoque":60}  |  RESPONSE: {"status":400,"msg":false}
+2021-09-05T19:28:10.786Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:28:53.251Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:30:10.030Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:30:14.544Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3,"estoque":60}  |  RESPONSE: {"length":125,"name":"error","severity":"ERROR","code":"42703","position":"51","file":"parse_target.c","line":"1028","routine":"checkInsertTargets"}
+2021-09-05T19:31:39.816Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:31:44.585Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3,"estoque":60}  |  RESPONSE: {"status":400,"msg":false}
+2021-09-05T19:32:27.950Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:32:31.715Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3,"estoque":60}  |  RESPONSE: {"status":400,"msg":false}
+2021-09-05T19:32:46.332Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:32:51.353Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3,"estoque":60}  |  RESPONSE: {"status":400,"msg":false}
+2021-09-05T19:33:07.591Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:33:11.820Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3,"estoque":60}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado não possui estoque."]}
+2021-09-05T19:33:55.873Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:34:24.101Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:35:27.840Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:35:53.199Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3}  |  RESPONSE: false
+2021-09-05T19:40:46.268Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:40:50.754Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3}  |  RESPONSE: false
+2021-09-05T19:41:09.637Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:41:13.950Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3}  |  RESPONSE: {}
+2021-09-05T19:42:42.409Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:42:46.430Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":19.3}  |  RESPONSE: {"venda_id":1,"cliente_id":1,"produto_id":1,"valor":"19.3","data":"2021-09-05T22:42:42.696Z"}
+2021-09-05T19:45:44.853Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:45:49.653Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:46:23.581Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:47:26.830Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:48:25.461Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:51:28.754Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:53:01.348Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":18.99}  |  RESPONSE: {"venda_id":2,"cliente_id":1,"produto_id":1,"valor":"18.99","data":"2021-09-05T22:52:56.985Z"}
+2021-09-05T19:55:27.525Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:55:38.801Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-05T19:56:01.387Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:56:07.670Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:56:13.981Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":18.99}  |  RESPONSE: {"venda_id":4,"cliente_id":1,"produto_id":1,"valor":"18.99","data":"2021-09-05T22:56:09.583Z"}
+2021-09-05T19:58:24.240Z [loja-api] info API iniciada na porta 9902
+2021-09-05T19:58:40.526Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":1,"produto_id":1,"valor":18.99}  |  RESPONSE: {"venda_id":5,"cliente_id":1,"produto_id":1,"valor":"18.99","data":"2021-09-05T22:58:36.143Z"}
+2021-09-05T19:58:58.467Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"venda_id":6,"cliente_id":2,"produto_id":1,"valor":"18.99","data":"2021-09-05T22:58:54.085Z"}
+2021-09-05T20:08:42.190Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:08:53.943Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:10:53.584Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:11:24.195Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:11:49.535Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:11:54.353Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {}
+2021-09-05T20:12:11.850Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:12:18.203Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"venda_id":7,"cliente_id":2,"produto_id":1,"valor":"18.99","data":"2021-09-05T23:12:14.316Z"}
+2021-09-05T20:16:42.145Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:16:55.493Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"venda_id":8,"cliente_id":2,"produto_id":1,"valor":"18.99","data":"2021-09-05T23:16:51.589Z"}
+2021-09-05T20:17:35.569Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:18:02.136Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:18:17.209Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:18:22.531Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"venda_id":9,"cliente_id":2,"produto_id":1,"valor":"18.99","data":"2021-09-05T23:18:18.635Z"}
+2021-09-05T20:18:26.982Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"length":110,"name":"error","severity":"FATAL","code":"53300","file":"miscinit.c","line":"661","routine":"InitializeSessionUserId"}
+2021-09-05T20:19:03.639Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"venda_id":10,"cliente_id":2,"produto_id":1,"valor":"18.99","data":"2021-09-05T23:18:59.746Z"}
+2021-09-05T20:19:19.175Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"venda_id":11,"cliente_id":2,"produto_id":1,"valor":"18.99","data":"2021-09-05T23:19:15.281Z"}
+2021-09-05T20:20:04.844Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:20:14.908Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:20:23.261Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"venda_id":12,"cliente_id":2,"produto_id":1,"valor":"18.99","data":"2021-09-05T23:20:19.378Z"}
+2021-09-05T20:20:39.369Z [loja-api] info API iniciada na porta 9902

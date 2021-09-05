@@ -77,6 +77,25 @@ export default class PgPool {
     }
 
     /**
+     * Método que busca campos dinamicamente em uma tabela com base nos filtros passados
+     * @param {array} arrCampos 
+     * @param {array} arrValores 
+     * @returns 
+     */
+    async filtrar(arrCampos, arrValores) {
+        const conn = await this._objConexao.connect();
+        try {
+            const res = await conn.query(this._montarSqlSelectPorFiltros(arrCampos, arrValores));
+
+            return res.rows;
+        } catch (err) {
+            throw err;
+        } finally {
+            conn.release();
+        }
+    }
+
+    /**
      * Método que monta dinamicamente o necessário para um SELECT por filtros diversos.
      * Os filtros serão de dois tipos somente: string (str), númerico (num) ou boolean (bool)
      * Os filtros devem vir nesse formato: [{campo: "nome_campo", tipo: "str", valor: "valor a ser procurado no campo"}]
@@ -89,18 +108,20 @@ export default class PgPool {
         try {
             const camposAux = (campos == undefined || campos.length == 0) ? '*' : campos.join(', ');
             let strSelect = `SELECT ${camposAux} FROM ${this._nomeEntidade} WHERE 1=1 `;
+            //console.log('campos:', campos);
+            //console.log('filtros:', filtros);
 
             let countFiltros = filtros.length;
             if (countFiltros > 0) {
                 let arrFiltros = [];
                 for (let i = 0; i < countFiltros; i++) {
                     if (filtros[i].tipo === 'str') {
-                        arrFiltros.push(`${filtros[i].campos} ILIKE '%${filtros[i].valor}%'`);
+                        arrFiltros.push(`${filtros[i].campo} ILIKE '%${filtros[i].valor}%'`);
                     } else if (filtros[i].tipo === 'num') {
-                        arrFiltros.push(`${filtros[i].campos} = ${filtros[i].valor}`);
+                        arrFiltros.push(`${filtros[i].campo} = ${filtros[i].valor}`);
                     } else if (filtros[i].tipo === 'bool') {
                         let valorAux = (filtros[i].valor == true) ? 't' : 'f';
-                        arrFiltros.push(`${filtros[i].campos} = ${valorAux}`);
+                        arrFiltros.push(`${filtros[i].campo} = ${valorAux}`);
                     } else {
                         throw { msg: `O filtro ${filtros[i]} possui um tipo inválido para consulta.` }
                     }
@@ -108,6 +129,7 @@ export default class PgPool {
                 strSelect += `AND ${arrFiltros.join(' AND ')}`;
             }
             strSelect += ` ORDER BY ${this._nomeEntidade}_id`;
+            //console.log(strSelect);
 
             return strSelect;
         } catch (err) {
@@ -130,6 +152,7 @@ export default class PgPool {
                 strInsert += ((i < countColunas) ? `$${i}, ` : `$${i}`);
             }
             strInsert += `) RETURNING *`;
+            //console.log('sql INSERT', strInsert);
 
             return strInsert;
         } catch (err) {
@@ -155,7 +178,7 @@ export default class PgPool {
                 arrAtualizar.push(`${arrColunas[i]}='${arrValores[i]}'`);
             }
             strUpdate += arrAtualizar.join(', ') + ` WHERE ${this._nomeEntidade}_id=$1 RETURNING *`;
-            //console.log('sql:', strUpdate); return false;
+            //console.log('sql UPDATE:', strUpdate);
 
             return strUpdate;
         } catch (err) {
