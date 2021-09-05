@@ -1,0 +1,5 @@
+2021-09-05T21:33:08.648Z [petshop-api] info API iniciada na porta 9902
+2021-09-05T21:35:40.205Z [petshop-api] error GET /proprietarios |  REQUEST: {}  |  RESPONSE: {"length":192,"name":"error","severity":"ERROR","code":"42703","hint":"Perhaps you meant to reference the column \"proprietarios.proprietario_id\".","position":"49","file":"parse_relation.c","line":"3284","routine":"errorMissingColumn"}
+2021-09-05T21:39:39.437Z [petshop-api] error GET /proprietarios |  REQUEST: {}  |  RESPONSE: {"length":112,"name":"error","severity":"ERROR","code":"42P01","position":"15","file":"parse_relation.c","line":"1177","routine":"parserOpenTable"}
+2021-09-05T21:39:58.744Z [petshop-api] info API iniciada na porta 9902
+2021-09-05T21:40:06.361Z [petshop-api] info API iniciada na porta 9902
