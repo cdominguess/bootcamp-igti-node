@@ -9,6 +9,8 @@ export default class ClienteService extends BaseService {
 
     /**
      * Validação dos dados antes da persistência
+     * É invocado na classe base durante a execução do método "criar"
+     * 
      * @param {object} objCliente 
      * @returns array|boolean
      */

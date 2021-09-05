@@ -1,7 +1,8 @@
-import objSercice from '../service/Fornecedor.js';
+import BaseControler from './Base.js';
+import FornecedorService from '../service/Fornecedor.js';
+export default class FornecedorControler extends BaseControler {
 
-class FornecedorControler {
-
+    constructor() {
+        super(new FornecedorService);
+    }
 }
-
-export default new FornecedorControler();

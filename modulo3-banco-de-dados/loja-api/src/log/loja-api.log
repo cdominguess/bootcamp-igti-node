@@ -392,3 +392,27 @@
 2021-09-05T01:46:35.161Z [loja-api] error DELETE /clientes/5 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 5 não localizado."}
 2021-09-05T01:46:40.099Z [loja-api] error DELETE /clientes/4 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 4 não localizado."}
 2021-09-05T01:48:17.208Z [loja-api] info POST /clientes |  REQUEST: {"nome":"Sílvia Laura Jardin","cpf":"234.123.870-22","telefone":"98489-4545","email":"silvia@gmail.com","endereco":"Rua 12, 199 - Estreito - Florianópolis SC"}  |  RESPONSE: {"cliente_id":4,"nome":"Sílvia Laura Jardin","cpf":"234.123.870-22","telefone":"98489-4545","email":"silvia@gmail.com","endereco":"Rua 12, 199 - Estreito - Florianópolis SC"}
+2021-09-05T02:02:11.799Z [loja-api] info API iniciada na porta 9902
+2021-09-05T02:03:54.034Z [loja-api] info API iniciada na porta 9902
+2021-09-05T02:04:43.751Z [loja-api] info API iniciada na porta 9902
+2021-09-05T02:07:27.170Z [loja-api] info API iniciada na porta 9902
+2021-09-05T02:07:34.724Z [loja-api] error DELETE /fornecedores/3 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 3 não localizado."}
+2021-09-05T02:07:55.904Z [loja-api] error DELETE /fornecedores/3 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 3 não localizado."}
+2021-09-05T02:08:01.070Z [loja-api] error GET /fornecedores |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"Nenhum registro."}
+2021-09-05T02:08:07.979Z [loja-api] error GET /fornecedores/1 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 1 não localizado."}
+2021-09-05T02:09:00.117Z [loja-api] info API iniciada na porta 9902
+2021-09-05T02:12:15.510Z [loja-api] error POST /fornecedores |  REQUEST: {"nome":"Fornecedor 001","cpf":"54654464","telefone":"98489-4545","email":"silvia@gmail.com","endereco":"Rua 12, 199 - Estreito - Florianópolis SC"}  |  RESPONSE: {}
+2021-09-05T02:15:26.371Z [loja-api] error POST /clientes |  REQUEST: {"nom":"Sílvia Laura Jardin","cpf":"234.123.870-22","telefone":"98489-4545","email":"silvia@gmail.com","endereco":"Rua 12, 199 - Estreito - Florianópolis SC"}  |  RESPONSE: {"status":400,"msg":["Atributo 'nome' inválido."]}
+2021-09-05T02:15:37.824Z [loja-api] info API iniciada na porta 9902
+2021-09-05T02:15:43.814Z [loja-api] error POST /fornecedores |  REQUEST: {"nome":"Fornecedor 001","cpf":"54654464","telefone":"98489-4545","email":"silvia@gmail.com","endereco":"Rua 12, 199 - Estreito - Florianópolis SC"}  |  RESPONSE: {"status":400,"msg":["Atributo 'cnpj' inválido."]}
+2021-09-05T02:15:48.368Z [loja-api] error POST /fornecedores |  REQUEST: {"nome":"Fornecedor 001","cpf":"54654464","telefdone":"98489-4545","email":"silvia@gmail.com","endereco":"Rua 12, 199 - Estreito - Florianópolis SC"}  |  RESPONSE: {"status":400,"msg":["Atributo 'cnpj' inválido.","Atributo 'telefone' inválido."]}
+2021-09-05T02:15:56.960Z [loja-api] error POST /fornecedores |  REQUEST: {"nome":"Fornecedor 001","cpf":"54654464","telefone":"98489-4545","email":"silvia@gmail.com","endereco":"Rua 12, 199 - Estreito - Florianópolis SC"}  |  RESPONSE: {"status":400,"msg":["Atributo 'cnpj' inválido."]}
+2021-09-05T02:16:38.402Z [loja-api] info API iniciada na porta 9902
+2021-09-05T02:17:02.727Z [loja-api] info API iniciada na porta 9902
+2021-09-05T02:18:32.959Z [loja-api] error POST /fornecedores |  REQUEST: {"nome":"Fornecedor 001","cnpj":"54654464","telefone":"98489-4545","email":"for001@gmail.com","endereco":"Rua Rosa, 63"}  |  RESPONSE: {"status":400,"msg":["Atributo 'cnpj' inválido."]}
+2021-09-05T02:18:42.542Z [loja-api] info POST /fornecedores |  REQUEST: {"nome":"Fornecedor 001","cnpj":"546544643232","telefone":"98489-4545","email":"for001@gmail.com","endereco":"Rua Rosa, 63"}  |  RESPONSE: {"fornecedor_id":1,"nome":"Fornecedor 001","cnpj":"546544643232","telefone":"98489-4545","email":"for001@gmail.com","endereco":"Rua Rosa, 63"}
+2021-09-05T02:19:30.826Z [loja-api] error GET /fornecedores/2 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 2 não localizado."}
+2021-09-05T02:19:54.112Z [loja-api] error PUT /fornecedores/2 |  REQUEST: {"fornecedor_id":1,"nome":"Fornecedor 001","cnpj":"546544643232","telefone":"98489-4545","email":"for001@gmail.com","endereco":"Rua Rosa, 63"}  |  RESPONSE: {"status":404,"msg":"ID 2 não localizado."}
+2021-09-05T02:20:11.531Z [loja-api] info PUT /fornecedores |  REQUEST: {"fornecedor_id":1,"nome":"Fornecedor 001 atualizado","cnpj":"546544643232","telefone":"98489-4545","email":"for001@gmail.com.br","endereco":"Rua Rosa, 61"}  |  RESPONSE: {"fornecedor_id":1,"nome":"Fornecedor 001 atualizado","cnpj":"546544643232","telefone":"98489-4545","email":"for001@gmail.com.br","endereco":"Rua Rosa, 61"}
+2021-09-05T02:21:04.419Z [loja-api] info POST /fornecedores |  REQUEST: {"nome":"Fornecedor 002","cnpj":"451232145214","telefone":"3333-1111","email":"for002@outlook.com","endereco":"Av. Atlântica, 100"}  |  RESPONSE: {"fornecedor_id":2,"nome":"Fornecedor 002","cnpj":"451232145214","telefone":"3333-1111","email":"for002@outlook.com","endereco":"Av. Atlântica, 100"}
+2021-09-05T02:21:26.814Z [loja-api] error DELETE /fornecedores/3 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 3 não localizado."}
