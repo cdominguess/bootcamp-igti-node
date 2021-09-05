@@ -34,20 +34,48 @@ export default class VendaService extends BaseService {
         return objVendaCriada;
     }
 
+    /**
+     * Método sobrescrito da classe base porque ao atalizar uma venda deve-se desconsiderar o produto passado, 
+     * logo tem que remover o mesmo do objeto antes de passar para o repositório
+     *  
+     * @param {object} obj 
+     * @param {number} id 
+     * @returns 
+     */
     async atualizar(obj, id) {
-        if (await this._instanciaRepository.buscarPorId(id) == undefined) {
+        const objVendaOriginal = await this._instanciaRepository.buscarPorId(id);
+        if (objVendaOriginal == undefined) {
             throw { status: 404, msg: `ID ${id} não localizado.` }
         }
+        
+        // Atribui numa variável o objeto da requisição
+        const objVendaAtualizar = obj;
+        
+        // Atualiza nesse objeto o produto_id com base na venda do banco de dados, para desconsiderar o que possa ter vindo na requisição
+        objVendaAtualizar.produto_id = objVendaOriginal.produto_id;
 
-        return await this._instanciaRepository.atualizar(obj, id);
+        return await this._instanciaRepository.atualizar(objVendaAtualizar, id);
     }
 
+    /**
+     * Método sobrescrito da classe base porque ao excluir uma venda deve-se atualizar 
+     * o estoque do produto dessa venda, incrementando o mesmo em sua respectiva tabela
+     * 
+     * @param {number} id 
+     * @returns 
+     */
     async excluir(id) {
-        if (await this._instanciaRepository.buscarPorId(id) == undefined) {
+        const objVendaOriginal = await this._instanciaRepository.buscarPorId(id);
+        if (objVendaOriginal == undefined) {
             throw { status: 404, msg: `ID ${id} não localizado.` }
         }
 
-        return await this._instanciaRepository.excluir(id);
+        // Exclui a venda
+        await this._instanciaRepository.excluir(id);
+
+        // Atualiza o estoque do produto
+        const estoqueProd = (await this._produtoRepository.retornarEstoque(objVendaOriginal.produto_id)) + 1; //console.log('estoque para atualizar', estoqueProd);
+        this._produtoRepository.atualizarEstoque(estoqueProd, objVendaOriginal.produto_id);
     }
 
     /**

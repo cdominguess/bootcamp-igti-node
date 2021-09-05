@@ -617,3 +617,19 @@
 2021-09-05T20:20:14.908Z [loja-api] info API iniciada na porta 9902
 2021-09-05T20:20:23.261Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"venda_id":12,"cliente_id":2,"produto_id":1,"valor":"18.99","data":"2021-09-05T23:20:19.378Z"}
 2021-09-05T20:20:39.369Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:23:21.830Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:38:05.173Z [loja-api] error PUT /vendas/13 |  REQUEST: {"venda_id":12,"cliente_id":2,"produto_id":1,"valor":"18.99","data":"2021-09-05T23:20:19.378Z"}  |  RESPONSE: {"status":404,"msg":"ID 13 não localizado."}
+2021-09-05T20:38:21.963Z [loja-api] info PUT /vendas |  REQUEST: {"venda_id":12,"cliente_id":2,"produto_id":1,"valor":"18.99"}  |  RESPONSE: {"venda_id":12,"cliente_id":2,"produto_id":1,"valor":"18.99","data":"2021-09-05T23:20:19.378Z"}
+2021-09-05T20:38:53.039Z [loja-api] info PUT /vendas |  REQUEST: {"venda_id":12,"cliente_id":2,"produto_id":1,"valor":"18.95"}  |  RESPONSE: {"venda_id":12,"cliente_id":2,"produto_id":1,"valor":"18.95","data":"2021-09-05T23:20:19.378Z"}
+2021-09-05T20:41:17.349Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:41:22.069Z [loja-api] info PUT /vendas |  REQUEST: {"venda_id":12,"cliente_id":2,"produto_id":1,"valor":"18.95"}  |  RESPONSE: false
+2021-09-05T20:43:18.229Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:43:24.903Z [loja-api] info PUT /vendas |  REQUEST: {"venda_id":12,"cliente_id":2,"produto_id":2,"valor":"18.95"}  |  RESPONSE: false
+2021-09-05T20:45:02.234Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:45:06.004Z [loja-api] info PUT /vendas |  REQUEST: {"venda_id":12,"cliente_id":2,"produto_id":1,"valor":"18.95"}  |  RESPONSE: false
+2021-09-05T20:46:42.225Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:46:56.684Z [loja-api] info PUT /vendas |  REQUEST: {"venda_id":12,"cliente_id":2,"produto_id":1,"valor":"18.78"}  |  RESPONSE: {"venda_id":12,"cliente_id":2,"produto_id":1,"valor":"18.78","data":"2021-09-05T23:20:19.378Z"}
+2021-09-05T20:48:52.983Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:50:16.000Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:51:49.743Z [loja-api] info API iniciada na porta 9902
+2021-09-05T20:52:43.420Z [loja-api] error GET /vendas/12 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 12 não localizado."}
