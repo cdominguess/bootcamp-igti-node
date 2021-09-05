@@ -1,14 +1,18 @@
-
 export default class BaseControler {
 
+    /**
+     * O controller que estender este Base, SEMPRE será o responsável por ter um constructor com os seguintes dados:
+     * - O nome da entidade | - a instância do Sercice
+     * 
+     * @param {string} nomeEntidade     Nome da entidade que deverá ser encaminhada via Service, por fim ao repositório 
+     * @param {object} objService       Instância do Service que está trabalhando no momento
+     */
     constructor(nomeEntidade, objService) {
         // Nome da entidade que será manipulada
         this._nomeEntidade = nomeEntidade;
 
-        // Instância do service para regras de negócio
+        // Instância do Service para regras de negócio
         this._objService = objService;
-
-        console.log(this);
     }
 
     async buscar(req, res, next) {
@@ -21,8 +25,6 @@ export default class BaseControler {
 
     async buscarPorId(req, res, next) {
         try {
-            console.log('buscando por ID em BaseController');
-            console.log('nome da entidade: ' + this._nomeEntidade); 
             res.status(200).json({ success: true, dados: await this._objService.buscarPorId(req.params.id) });
         } catch (error) {
             next(error);

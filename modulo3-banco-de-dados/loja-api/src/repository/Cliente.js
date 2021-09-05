@@ -5,7 +5,6 @@ class ClienteRepository extends BaseRepository {
     }
 
     async buscarPorId(id) {
-        console.log('buscando ID ' + id + ' em ClienteRepository');
         return await this.adapter.buscarPorId('cliente', id);
     }
 

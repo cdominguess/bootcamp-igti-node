@@ -7,11 +7,6 @@ import config from "../config.js";
  * Este parâmetro está definido no arquivo de configurações da aplicação 
  */
 export default class BaseRepository {
-    // Adaptador de acesso ao banco de dados
-    adapter;
-
-    // Nome da entidade que será manipulada
-    entidade;
 
     /**
      * Contrutor da classe para quando algum repositório for instanciado já definir o adapter do banco

@@ -333,3 +333,11 @@
 2021-09-05T00:17:38.310Z [loja-api] info API iniciada na porta 9902
 2021-09-05T00:26:00.093Z [loja-api] info API iniciada na porta 9902
 2021-09-05T00:26:07.553Z [loja-api] error GET /clientes/5 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 5 não localizado."}
+2021-09-05T00:28:17.627Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:30:00.226Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:31:13.864Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:31:23.797Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:31:27.169Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:33:28.448Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:34:08.894Z [loja-api] info API iniciada na porta 9902
+2021-09-05T00:34:14.472Z [loja-api] error GET /clientes/5 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 5 não localizado."}

@@ -11,7 +11,6 @@ export default class ClienteService {
     }
 
     async buscarPorId(id) {
-        console.log('buscando ID ' + id + ' em ClienteService');
         const resultado = await objRepository.buscarPorId(id);
         if (resultado == undefined) {
             throw { status: 404, msg: `ID ${id} não localizado.` }

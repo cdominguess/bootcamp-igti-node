@@ -5,5 +5,3 @@ export default class ClienteControler extends BaseControler {
         super('cliente', new ClienteService());
     }
 }
-
-//export default new ClienteControler; 
