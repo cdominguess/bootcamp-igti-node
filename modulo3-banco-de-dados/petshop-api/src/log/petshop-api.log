@@ -43,3 +43,28 @@
 2021-09-06T01:58:15.242Z [petshop-api] error DELETE /proprietarios/3 |  REQUEST: {}  |  RESPONSE: {"length":278,"name":"error","severity":"ERROR","code":"23503","detail":"Key (proprietario_id)=(3) is still referenced from table \"animal\".","schema":"public","table":"animal","constraint":"fk_proprietario","file":"ri_triggers.c","line":"2785","routine":"ri_ReportViolation"}
 2021-09-06T01:58:36.274Z [petshop-api] error DELETE /proprietarios/1 |  REQUEST: {}  |  RESPONSE: {"length":278,"name":"error","severity":"ERROR","code":"23503","detail":"Key (proprietario_id)=(1) is still referenced from table \"animal\".","schema":"public","table":"animal","constraint":"fk_proprietario","file":"ri_triggers.c","line":"2785","routine":"ri_ReportViolation"}
 2021-09-06T01:59:44.474Z [petshop-api] error DELETE /proprietarios/1 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 1 não localizado."}
+2021-09-06T02:08:18.717Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:08:23.438Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:09:34.987Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:10:50.854Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:10:52.980Z [petshop-api] error GET /animais |  REQUEST: {}  |  RESPONSE: {}
+2021-09-06T02:11:18.367Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:11:52.832Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:13:04.203Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:15:46.300Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:19:07.401Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:20:25.835Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:25:46.011Z [petshop-api] error GET /animais?teste=carlos |  REQUEST: {}  |  RESPONSE: {}
+2021-09-06T02:38:25.049Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:41:57.283Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:43:40.266Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:45:33.356Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:46:20.301Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:47:32.106Z [petshop-api] error GET /animais?proprietario_id=2 |  REQUEST: {}  |  RESPONSE: {"length":204,"name":"error","severity":"ERROR","code":"42883","hint":"No operator matches the given name and argument types. You might need to add explicit type casts.","position":"66","file":"parse_oper.c","line":"722","routine":"op_error"}
+2021-09-06T02:48:18.163Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:48:21.208Z [petshop-api] error GET /animais?proprietario_id=2 |  REQUEST: {}  |  RESPONSE: {"length":204,"name":"error","severity":"ERROR","code":"42883","hint":"No operator matches the given name and argument types. You might need to add explicit type casts.","position":"66","file":"parse_oper.c","line":"722","routine":"op_error"}
+2021-09-06T02:49:41.189Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:49:44.894Z [petshop-api] error GET /animais?proprietario_id=2 |  REQUEST: {}  |  RESPONSE: {"length":204,"name":"error","severity":"ERROR","code":"42883","hint":"No operator matches the given name and argument types. You might need to add explicit type casts.","position":"52","file":"parse_oper.c","line":"722","routine":"op_error"}
+2021-09-06T02:50:23.244Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:51:03.362Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T02:54:19.430Z [petshop-api] info API iniciada na porta 9901

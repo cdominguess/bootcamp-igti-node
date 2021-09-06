@@ -15,11 +15,16 @@ const objRouter = express.Router();
  */
 
 objRouter.get("/", (req, res, next) => {
-
-    console.log('queryString: ', req.query);
-
     const objController = new controller();
-    objController.buscar(req, res, next);
+
+    if (Object.keys(req.query).length) {
+        // Se vir algum parâmetro via queryString na URL do recurso da API, utiliza este método
+        objController.filtrarParams(req, res, next);
+    } else {
+        // Caso contrário retorna a lista padrão
+        objController.buscar(req, res, next);
+    }
+
 });
 
 objRouter.get("/:id", (req, res, next) => {

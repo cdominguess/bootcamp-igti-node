@@ -54,7 +54,18 @@ export default class BaseService {
         return await this._instanciaRepository.excluir(id);
     }
 
-    async filtrar(arrCampos, arrFiltros) {
-        return await this._instanciaRepository.filtrar(arrCampos, arrFiltros);
+    async filtrar(objFiltros) {
+        const arrChaves = Object.keys(objFiltros);
+        const arrValores = Object.values(objFiltros);
+        const countFiltros = arrValores.length;
+        let arrFiltros = [];
+
+        for (let i = 0; i < countFiltros; i++) {
+            //console.log('tipo de ' + arrValores[i] + ': ' + typeof(arrValores[i])); 
+            let tipoCampo = (!isNaN(arrValores[i])) ? 'num' : (typeof(arrValores[i]) == 'boolean') ? 'bool' : 'str';
+            arrFiltros.push({ campo: arrChaves[i], tipo: tipoCampo, valor: arrValores[i] });
+        }
+
+        return await this._instanciaRepository.filtrar([], arrFiltros);
     }
 }

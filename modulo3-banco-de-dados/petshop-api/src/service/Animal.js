@@ -1,6 +1,7 @@
 import BaseService from "./Base.js";
 import AnimalRepository from "../repository/Animal.js";
 import ProprietarioRepository from "../repository/Proprietario.js";
+
 export default class AnimalService extends BaseService {
 
     constructor() {

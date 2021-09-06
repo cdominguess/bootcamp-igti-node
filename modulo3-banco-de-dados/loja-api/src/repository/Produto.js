@@ -1,4 +1,5 @@
 import BaseRepository from "./Base.js";
+
 export default class ProdutoRepository extends BaseRepository {
 
     constructor() {
