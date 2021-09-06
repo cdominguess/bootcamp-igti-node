@@ -68,3 +68,5 @@
 2021-09-06T02:50:23.244Z [petshop-api] info API iniciada na porta 9901
 2021-09-06T02:51:03.362Z [petshop-api] info API iniciada na porta 9901
 2021-09-06T02:54:19.430Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T03:03:49.105Z [petshop-api] info POST /animais |  REQUEST: {"nome":"Totó","tipo":"Cachorro","proprietario_id":6}  |  RESPONSE: {"animal_id":10,"nome":"Totó","tipo":"Cachorro","proprietario_id":6}
+2021-09-06T03:28:50.064Z [petshop-api] error DELETE /proprietarios/2 |  REQUEST: {}  |  RESPONSE: {"length":278,"name":"error","severity":"ERROR","code":"23503","detail":"Key (proprietario_id)=(2) is still referenced from table \"animal\".","schema":"public","table":"animal","constraint":"fk_proprietario","file":"ri_triggers.c","line":"2785","routine":"ri_ReportViolation"}
