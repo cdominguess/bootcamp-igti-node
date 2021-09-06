@@ -53,4 +53,8 @@ export default class BaseService {
 
         return await this._instanciaRepository.excluir(id);
     }
+
+    async filtrar(arrCampos, arrFiltros) {
+        return await this._instanciaRepository.filtrar(arrCampos, arrFiltros);
+    }
 }

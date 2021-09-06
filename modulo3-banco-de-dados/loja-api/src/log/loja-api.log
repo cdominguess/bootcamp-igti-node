@@ -633,3 +633,7 @@
 2021-09-05T20:50:16.000Z [loja-api] info API iniciada na porta 9902
 2021-09-05T20:51:49.743Z [loja-api] info API iniciada na porta 9902
 2021-09-05T20:52:43.420Z [loja-api] error GET /vendas/12 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 12 não localizado."}
+2021-09-05T23:32:32.844Z [loja-api] info API iniciada na porta 9902
+2021-09-05T23:32:50.571Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":false}
+2021-09-05T23:35:34.848Z [loja-api] info API iniciada na porta 9902
+2021-09-05T23:35:37.493Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":false}

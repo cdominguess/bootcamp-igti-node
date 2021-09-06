@@ -1,6 +1,7 @@
 import pgPool from "./adapter/pgPool.js";
 import pgSequelize from "./adapter/pgSequelize.js";
 import config from "../config.js";
+
 export default class BaseRepository {
 
     /**

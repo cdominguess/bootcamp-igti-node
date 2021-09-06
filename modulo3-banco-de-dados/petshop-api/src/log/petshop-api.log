@@ -3,3 +3,43 @@
 2021-09-05T21:39:39.437Z [petshop-api] error GET /proprietarios |  REQUEST: {}  |  RESPONSE: {"length":112,"name":"error","severity":"ERROR","code":"42P01","position":"15","file":"parse_relation.c","line":"1177","routine":"parserOpenTable"}
 2021-09-05T21:39:58.744Z [petshop-api] info API iniciada na porta 9902
 2021-09-05T21:40:06.361Z [petshop-api] info API iniciada na porta 9902
+2021-09-05T22:34:30.319Z [petshop-api] info API iniciada na porta 9902
+2021-09-05T23:15:07.060Z [petshop-api] info API iniciada na porta 9902
+2021-09-05T23:15:32.922Z [petshop-api] error POST /proprietarios |  REQUEST: {"noms":"Sílvia Laura Jardin","telefones":"98489-4545"}  |  RESPONSE: {"status":400,"msg":["O atributo 'nome' é inválido.","O atributo 'telefone' é inválido."]}
+2021-09-05T23:15:42.856Z [petshop-api] error POST /proprietarios |  REQUEST: {"nome":"S","telefones":"98489-4545"}  |  RESPONSE: {"status":400,"msg":["O atributo 'nome' é inválido.","O atributo 'telefone' é inválido."]}
+2021-09-05T23:16:05.730Z [petshop-api] error POST /proprietarios |  REQUEST: {"nome":"S","telefone":"98489-4545"}  |  RESPONSE: {"status":400,"msg":["O atributo 'nome' é inválido."]}
+2021-09-05T23:16:31.659Z [petshop-api] info POST /proprietarios |  REQUEST: {"nome":"Carlos Prop","telefone":"98489-4545"}  |  RESPONSE: {"proprietario_id":7,"nome":"Carlos Prop","telefone":"98489-4545"}
+2021-09-05T23:16:48.384Z [petshop-api] error PUT /proprietarios/8 |  REQUEST: {"nome":"João Dias alterado novamente","cpf":"234.123.870-22","telefone":"1212121212","email":"email@mail.com.br","endereco":"Rua X, 12"}  |  RESPONSE: {"status":404,"msg":"ID 8 não localizado."}
+2021-09-05T23:18:14.898Z [petshop-api] info PUT /proprietarios |  REQUEST: {"nome":"Carlos Prop Alterado","telefone":"3333-4545"}  |  RESPONSE: {"proprietario_id":7,"nome":"Carlos Prop Alterado","telefone":"3333-4545"}
+2021-09-05T23:18:34.070Z [petshop-api] error DELETE /proprietarios/8 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 8 não localizado."}
+2021-09-05T23:18:43.619Z [petshop-api] error GET /proprietarios/7 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 7 não localizado."}
+2021-09-05T23:25:41.915Z [petshop-api] info API iniciada na porta 9902
+2021-09-05T23:25:53.310Z [petshop-api] info API iniciada na porta 9902
+2021-09-05T23:26:36.371Z [petshop-api] error POST /animais |  REQUEST: {"nome":"Thanos","tipo":"Cachorroooo","proprietario_id":9}  |  RESPONSE: {}
+2021-09-05T23:29:33.831Z [petshop-api] info API iniciada na porta 9902
+2021-09-05T23:29:36.372Z [petshop-api] error POST /animais |  REQUEST: {"nome":"Thanos","tipo":"Cachorroooo","proprietario_id":9}  |  RESPONSE: {"status":400,"msg":false}
+2021-09-05T23:30:31.632Z [petshop-api] info API iniciada na porta 9901
+2021-09-05T23:31:09.593Z [petshop-api] error POST /animais |  REQUEST: {"nome":"Thanos","tipo":"Cachorroooo","proprietario_id":9}  |  RESPONSE: {"status":400,"msg":false}
+2021-09-05T23:35:24.438Z [petshop-api] info API iniciada na porta 9901
+2021-09-05T23:35:47.921Z [petshop-api] error POST /animais |  REQUEST: {"nome":"Thanos","tipo":"Cachorroooo","proprietario_id":9}  |  RESPONSE: {"status":400,"msg":false}
+2021-09-05T23:37:54.297Z [petshop-api] error POST /animais |  REQUEST: {"nome":"Thanos","tipo":"Cachorroooo","proprietario_id":9}  |  RESPONSE: {"status":400,"msg":false}
+2021-09-05T23:38:07.020Z [petshop-api] info API iniciada na porta 9901
+2021-09-05T23:38:09.897Z [petshop-api] error POST /animais |  REQUEST: {"nome":"Thanos","tipo":"Cachorroooo","proprietario_id":9}  |  RESPONSE: {"status":400,"msg":["O atributo 'proprietario_id' informado não existe."]}
+2021-09-06T01:36:06.957Z [petshop-api] error PUT /animais/10 |  REQUEST: {"nome":"Thanos","tipo":"Cachorraaaaaaa"}  |  RESPONSE: {"status":404,"msg":"ID 10 não localizado."}
+2021-09-06T01:36:12.316Z [petshop-api] info PUT /animais |  REQUEST: {"nome":"Thanos","tipo":"Cachorraaaaaaa"}  |  RESPONSE: {"animal_id":9,"nome":"Thanos","tipo":"Cachorraaaaaaa","proprietario_id":6}
+2021-09-06T01:36:31.962Z [petshop-api] error DELETE /animais/9 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 9 não localizado."}
+2021-09-06T01:36:59.154Z [petshop-api] error PUT /proprietarios/7 |  REQUEST: {"nome":"Carlos Prop adaddasd","telefone":"98489-4545"}  |  RESPONSE: {"status":404,"msg":"ID 7 não localizado."}
+2021-09-06T01:37:11.851Z [petshop-api] info PUT /proprietarios |  REQUEST: {"nome":"Carlos Prop adaddasd","telefone":"98489-4545"}  |  RESPONSE: {"proprietario_id":6,"nome":"Carlos Prop adaddasd","telefone":"98489-4545"}
+2021-09-06T01:37:24.907Z [petshop-api] error DELETE /proprietarios/7 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 7 não localizado."}
+2021-09-06T01:37:30.329Z [petshop-api] error DELETE /proprietarios/6 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 6 não localizado."}
+2021-09-06T01:42:33.874Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T01:49:59.710Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T01:56:27.961Z [petshop-api] info API iniciada na porta 9901
+2021-09-06T01:56:42.749Z [petshop-api] error POST /animais |  REQUEST: {"nome":"Thanos","tipo":"Cachorrooo adadsdo","proprietario_id":9}  |  RESPONSE: {"status":400,"msg":["O atributo 'proprietario_id' informado não existe."]}
+2021-09-06T01:56:49.286Z [petshop-api] info POST /animais |  REQUEST: {"nome":"Thanos","tipo":"Cachorrooo adadsdo","proprietario_id":4}  |  RESPONSE: {"animal_id":10,"nome":"Thanos","tipo":"Cachorrooo adadsdo","proprietario_id":4}
+2021-09-06T01:56:57.181Z [petshop-api] error PUT /animais/9 |  REQUEST: {"nome":"Thanos","tipo":"Cachorraaa r rwera"}  |  RESPONSE: {"status":404,"msg":"ID 9 não localizado."}
+2021-09-06T01:57:02.370Z [petshop-api] info PUT /animais |  REQUEST: {"nome":"Thanos","tipo":"Cachorraaa r rwera"}  |  RESPONSE: {"animal_id":4,"nome":"Thanos","tipo":"Cachorraaa r rwera","proprietario_id":3}
+2021-09-06T01:57:22.830Z [petshop-api] error DELETE /proprietarios/3 |  REQUEST: {}  |  RESPONSE: {"length":278,"name":"error","severity":"ERROR","code":"23503","detail":"Key (proprietario_id)=(3) is still referenced from table \"animal\".","schema":"public","table":"animal","constraint":"fk_proprietario","file":"ri_triggers.c","line":"2785","routine":"ri_ReportViolation"}
+2021-09-06T01:58:15.242Z [petshop-api] error DELETE /proprietarios/3 |  REQUEST: {}  |  RESPONSE: {"length":278,"name":"error","severity":"ERROR","code":"23503","detail":"Key (proprietario_id)=(3) is still referenced from table \"animal\".","schema":"public","table":"animal","constraint":"fk_proprietario","file":"ri_triggers.c","line":"2785","routine":"ri_ReportViolation"}
+2021-09-06T01:58:36.274Z [petshop-api] error DELETE /proprietarios/1 |  REQUEST: {}  |  RESPONSE: {"length":278,"name":"error","severity":"ERROR","code":"23503","detail":"Key (proprietario_id)=(1) is still referenced from table \"animal\".","schema":"public","table":"animal","constraint":"fk_proprietario","file":"ri_triggers.c","line":"2785","routine":"ri_ReportViolation"}
+2021-09-06T01:59:44.474Z [petshop-api] error DELETE /proprietarios/1 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 1 não localizado."}

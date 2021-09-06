@@ -15,6 +15,9 @@ const objRouter = express.Router();
  */
 
 objRouter.get("/", (req, res, next) => {
+
+    console.log('queryString: ', req.query);
+
     const objController = new controller();
     objController.buscar(req, res, next);
 });

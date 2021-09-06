@@ -1,6 +1,6 @@
 import BaseService from "./Base.js";
 import AnimalRepository from "../repository/Animal.js";
-
+import ProprietarioRepository from "../repository/Proprietario.js";
 export default class AnimalService extends BaseService {
 
     constructor() {
@@ -21,22 +21,20 @@ export default class AnimalService extends BaseService {
             arrErros.push("O atributo 'nome' é inválido.");
         }
 
-        if (obj.cnpj === undefined || obj.cnpj.length < 11) {
-            arrErros.push("O atributo 'cnpj' é inválido.");
+        if (obj.tipo === undefined || obj.tipo.length < 3) {
+            arrErros.push("O atributo 'tipo' é inválido.");
         }
 
-        if (obj.telefone === undefined || obj.telefone.length < 9) {
-            arrErros.push("O atributo 'telefone' é inválido.");
+        if (obj.proprietario_id === undefined || isNaN(obj.proprietario_id)) {
+            arrErros.push("O atributo 'proprietario_id' é inválido.");
+        } else {
+            // Valida se o proprietário passado existe no banco
+            const proprietarioRepo = new ProprietarioRepository();
+            if (await proprietarioRepo.buscarPorId(obj.proprietario_id) == undefined) {
+                arrErros.push("O atributo 'proprietario_id' informado não existe.");
+            }
         }
-
-        if (obj.email === undefined || obj.email.length < 7 || obj.email.indexOf('@') === -1) {
-            arrErros.push("O atributo 'email' é inválido.");
-        }
-
-        if (obj.endereco === undefined || obj.endereco.length < 10) {
-            arrErros.push("O atributo 'endereco' é inválido.");
-        }
-
+        
         if (arrErros.length > 0) {
             return arrErros;
         }
