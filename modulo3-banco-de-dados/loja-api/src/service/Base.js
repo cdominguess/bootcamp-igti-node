@@ -6,7 +6,7 @@ export default class BaseService {
      * 
      * @param {object} instanciaRepository
      */
-     constructor(instanciaRepository) {
+    constructor(instanciaRepository) {
         this._instanciaRepository = instanciaRepository;
     }
 

@@ -1,10 +1,35 @@
 import BaseService from "./Base.js";
 import ProdutoRepository from "../repository/Produto.js";
 import FornecedorRepository from "../repository/Fornecedor.js";
+import ProdutoInformacoesRepository from "../repository/ProdutoInformacoes.js";
 export default class ProdutoService extends BaseService {
 
     constructor() {
         super(new ProdutoRepository());
+    }
+
+    /**
+     * Método sobrescrito para buscar informaçãoes de produto do respositório do MongoDb
+     * @param {integer} id 
+     * @returns 
+     */
+    async buscarPorId(id) {
+        const resultado = await this._instanciaRepository.buscarPorId(id);
+        if (resultado == undefined) {
+            throw { status: 404, msg: `ID ${id} não localizado.` }
+        }
+
+        const objRepositoryInfo = new ProdutoInformacoesRepository();
+        const dados = resultado.dataValues;
+        dados.informacoes = await objRepositoryInfo.buscar(id);
+
+        return dados;
+    }
+
+
+    async inserirProdutoInformacoes(obj) {
+        const objRepository = new ProdutoInformacoesRepository();
+        await objRepository.inserir(obj);
     }
 
     /**

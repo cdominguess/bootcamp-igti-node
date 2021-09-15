@@ -1,9 +1,10 @@
+import ProdutoModel from "../model/Produto.js";
 import BaseRepository from "./Base.js";
 
 export default class ProdutoRepository extends BaseRepository {
 
     constructor() {
-        super('produto');
+        super('produto', 'pgSequelize', new ProdutoModel());
     }
 
     /**

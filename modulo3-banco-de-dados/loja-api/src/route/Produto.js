@@ -29,6 +29,11 @@ objRouter.post("/", (req, res, next) => {
     objController.criar(req, res, next);
 });
 
+objRouter.post("/info", (req, res, next) => {
+    const objController = new controller();
+    objController.inserirProdutoInformacoes(req, res, next);
+});
+
 objRouter.put("/:id", (req, res, next) => {
     const objController = new controller();
     objController.atualizar(req, res, next);

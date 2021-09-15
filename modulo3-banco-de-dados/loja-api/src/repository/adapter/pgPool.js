@@ -1,7 +1,17 @@
 import pg from 'pg';
+import config from "../../config.js";
+
 export default class PgPool {
 
-    constructor(objConfigDB, nomeEntidade) {
+    /**
+     * Constructor do adapter PgPool, que utilizará o driver nativo do postgreSQL 
+     * para manipular dados em banco com querys escritas dinamicamente.
+     * 
+     * @param {string} nomeEntidade     Nome da entidade que será manipulada
+     */
+    constructor(nomeEntidade) {
+        const objConfigDB = (process.env.NODE_ENV === 'production') ? config.dbProd : config.dbDev;
+
         const objPool = new pg.Pool({
             connectionString: `postgres://${objConfigDB.user}:${objConfigDB.password}@${objConfigDB.host}/${objConfigDB.database}`
         });
@@ -151,8 +161,7 @@ export default class PgPool {
             for (let i = 1; i <= countColunas; i++) {
                 strInsert += ((i < countColunas) ? `$${i}, ` : `$${i}`);
             }
-            strInsert += `) RETURNING *`;
-            //console.log('sql INSERT', strInsert);
+            strInsert += `) RETURNING *`; //console.log('sql INSERT', strInsert);
 
             return strInsert;
         } catch (err) {
@@ -177,8 +186,7 @@ export default class PgPool {
             for (let i = 0; i < countColunas; i++) {
                 arrAtualizar.push(`${arrColunas[i]}='${arrValores[i]}'`);
             }
-            strUpdate += arrAtualizar.join(', ') + ` WHERE ${this._nomeEntidade}_id=$1 RETURNING *`;
-            //console.log('sql UPDATE:', strUpdate);
+            strUpdate += arrAtualizar.join(', ') + ` WHERE ${this._nomeEntidade}_id=$1 RETURNING *`; //console.log('sql UPDATE:', strUpdate);
 
             return strUpdate;
         } catch (err) {

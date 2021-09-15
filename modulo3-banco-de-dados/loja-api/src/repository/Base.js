@@ -1,22 +1,28 @@
 import pgPool from "./adapter/pgPool.js";
 import pgSequelize from "./adapter/pgSequelize.js";
-import config from "../config.js";
+import pgMongoDb from "./adapter/pgMongoDb.js";
 
 export default class BaseRepository {
 
     /**
      * Contrutor da classe para quando algum repositório for instanciado já definir o adapter do banco
-     * Também recebe no contructor o nome da entidade que será manipulada
+     *  - Quando usar o adapter PgPool: Recebe no contructor o nome da entidade que será manipulada 
+     *  - Quando usar o adapter PgSequelize: Recebe no contructor o objeto da Model será manipulada 
      * 
-     * @param {string} nomeEntidade
+     * @param {string} nomeEntidade     Nome da entidade a ser manipulada
+     * @param {string} adapterDb        Adaptador de acesso ao banco de dados que será utilizado
+     * @param {object} objModel         Seadaptador for Sequelize, passar o objeto da model
      */
-    constructor(nomeEntidade) {
-        const objConfigDB = (process.env.NODE_ENV === 'production') ? config.dbProd : config.dbDev;
-
-        if (config.adapter === 'pgPool') {
-            this.adapter = new pgPool(objConfigDB, nomeEntidade);
+    constructor(nomeEntidade, adapterDb, objModel) {
+        if (adapterDb === 'pgPool') {
+            this.adapter = new pgPool(nomeEntidade);
+            //console.log('ADAPTER: PgPool');
+        } else if (adapterDb === 'pgSequelize') {
+            this.adapter = new pgSequelize(objModel);
+            //console.log('ADAPTER: PgSequelize');
         } else {
-            this.adapter = new pgSequelize(objConfigDB, nomeEntidade);
+            this.adapter = new pgMongoDb(nomeEntidade);
+            //console.log('ADAPTER: pgMongoDb');
         }
     }
 
@@ -24,8 +30,10 @@ export default class BaseRepository {
         return await this.adapter.buscar();
     }
 
-    async buscarPorId(id) {
-        return await this.adapter.buscarPorId(id);
+    async buscarPorId(id, nomeCampoId) {
+        const nomeCampoIdAux = nomeCampoId || null;
+
+        return await this.adapter.buscarPorId(id, nomeCampoIdAux);
     }
 
     async criar(obj) {

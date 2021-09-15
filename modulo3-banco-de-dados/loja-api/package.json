@@ -16,7 +16,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "mongodb": "^4.1.2",
     "pg": "^8.7.1",
+    "sequelize": "^6.6.5",
     "winston": "^3.3.3"
   }
 }
