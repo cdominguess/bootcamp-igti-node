@@ -4,6 +4,7 @@ import winston from 'winston';
 
 import ProprietarioRoute from './src/route/Proprietario.js';
 import AnimalRoute from './src/route/Animal.js';
+import ServicoRoute from './src/route/Servico.js';
 import config from './src/config.js'
 
 const app = express();
@@ -33,6 +34,7 @@ global.logger = winston.createLogger({
 // Definição das rotas
 app.use('/proprietarios', ProprietarioRoute);
 app.use('/animais', AnimalRoute);
+app.use('/servicos', ServicoRoute);
 
 // Tratamento genérico de erros de qualquer rota
 app.use((err, req, res, next) => {
