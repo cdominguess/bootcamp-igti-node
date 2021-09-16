@@ -35,7 +35,10 @@ export default class PgMongoDb {
         const conn = this._objConexao;
         try {
             await conn.connect();
-            return await conn.db(this._nomeDatabase).collection(this._nomeCollection).findOne({ produtoId: parseInt(id) });
+
+            const objWhere = JSON.parse('{ "' + nomeIdDocMongo + '": ' + parseInt(id) + ' }'); //console.log('where dentro do buscarPorId do pgMongoDb: ', objWhere);
+
+            return await conn.db(this._nomeDatabase).collection(this._nomeCollection).findOne(objWhere);
         } catch (err) {
             throw err;
         } finally {

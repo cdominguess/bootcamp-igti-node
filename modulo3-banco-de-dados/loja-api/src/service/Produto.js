@@ -20,10 +20,9 @@ export default class ProdutoService extends BaseService {
         }
 
         const objRepositoryInfo = new ProdutoInformacoesRepository();
-        const dados = resultado.dataValues;
-        dados.informacoes = await objRepositoryInfo.buscar(id);
+        resultado.informacoes = await objRepositoryInfo.buscar(id);
 
-        return dados;
+        return resultado;
     }
 
 

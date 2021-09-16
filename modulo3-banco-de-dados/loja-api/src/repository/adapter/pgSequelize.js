@@ -30,7 +30,7 @@ export default class PgSequelize {
         this.instanciaFactoryModel = this.instanciaConexaoDb.define(objModel.nome, objModel.atributos);
 
         // Armazena o conteúdo da model que veio por parâmetro
-        objModel = objModel;
+        this.conteudoObjModel = objModel;
 
         this.arrIncludesFindAll = [];
 
@@ -57,7 +57,7 @@ export default class PgSequelize {
     async buscar() {
         try {
             if (this.arrIncludesFindAll.length > 0) {
-                const includes = { include : this.arrIncludesFindAll };
+                const includes = { include: this.arrIncludesFindAll };
                 return await this.instanciaFactoryModel.findAll(includes);
             }
 
@@ -69,7 +69,14 @@ export default class PgSequelize {
 
     async buscarPorId(id) {
         try {
-            return await this.instanciaFactoryModel.findByPk(id);
+            const dados = await this.instanciaFactoryModel.findByPk(id); //console.log('dados em buscarPorId: ', dados); return false;
+
+            // o dados.toJSON retorna somente o JSON do resultado da consulta, e não o objeto da model inteiro
+            if (dados !== null) {
+                return dados.toJSON();
+            }
+
+            return null;
         } catch (err) {
             throw err;
         }
@@ -90,11 +97,18 @@ export default class PgSequelize {
         try {
             const objAtualizar = this._converterParaLowerCamelCase(obj);
 
+            // Pega os atributos da model a ser atualizada e recupera o primeiro atributo que SEMPRE será o nome do PKID
+            const arrAtributos = Object.keys(this.conteudoObjModel.atributos);
+            const nomeAtributoId = arrAtributos[0];
+
+            // Monta um where em string e converte para objeto para passar ao "where" ao .update
+            const objWhere = JSON.parse('{ "'+nomeAtributoId+'": '+id+' }');
+
             await this.instanciaFactoryModel.update(objAtualizar, {
-                where: { clienteId: id }
+                where: objWhere
             });
 
-            return await this.instanciaModel.findByPk(id);
+            return await this.instanciaFactoryModel.findByPk(id);
         } catch (err) {
             throw err;
         }
@@ -102,26 +116,37 @@ export default class PgSequelize {
 
     async excluir(id) {
         try {
+             // Pega os atributos da model a ser atualizada e recupera o primeiro atributo que SEMPRE será o nome do PKID
+             const arrAtributos = Object.keys(this.conteudoObjModel.atributos);
+             const nomeAtributoId = arrAtributos[0];
+ 
+             // Monta um where em string e converte para objeto para passar ao "where" ao .update
+             const objWhere = JSON.parse('{ "'+nomeAtributoId+'": '+id+' }');
+
             await this.instanciaFactoryModel.destroy({
-                where: { clienteId: id }
+                where: objWhere
             });
         } catch (err) {
             throw err;
         }
     }
 
-    
+
     /**
      * Método que busca campos dinamicamente em uma tabela com base nos filtros passados
-     * @param {array} arrCampos 
-     * @param {array} arrValores 
+     * @param {array} arrCampos     um array com nome dos campos a serem retornados no filtro
+     * @param {array} arrValores    Um objeto contendo o { nome_do_campo: valor_para_pesquisar_no_campo }
      * @returns 
      */
-     async filtrar(arrCampos, arrValores) {
-        const conn = await this._objConexao.connect();
+    async filtrar(arrCampos, arrValores) {
         try {
-            console.log('falta implementar!!');
-            return true;
+            const ret = await this.instanciaFactoryModel.findAll({
+                attributes: arrCampos,
+                where: arrValores,
+                raw: true
+            });
+            
+            return ret
         } catch (err) {
             throw err;
         }

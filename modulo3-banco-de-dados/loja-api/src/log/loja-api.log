@@ -1101,3 +1101,126 @@
 2021-09-15T22:19:14.682Z [loja-api] info API iniciada na porta 9902
 2021-09-15T22:21:11.602Z [loja-api] info API iniciada na porta 9902
 2021-09-15T22:22:08.107Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:31:34.137Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:31:42.061Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {}
+2021-09-16T02:32:50.056Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:32:55.059Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado está com o estoque zerado."]}
+2021-09-16T02:33:58.172Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:34:14.027Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado está com o estoque zerado."]}
+2021-09-16T02:35:25.743Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:35:31.729Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado está com o estoque zerado."]}
+2021-09-16T02:35:42.095Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:35:47.709Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado está com o estoque zerado."]}
+2021-09-16T02:36:30.446Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:36:36.108Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado está com o estoque zerado."]}
+2021-09-16T02:39:23.454Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:39:31.446Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {}
+2021-09-16T02:39:47.054Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:39:52.586Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado está com o estoque zerado."]}
+2021-09-16T02:40:10.310Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:40:16.005Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado está com o estoque zerado."]}
+2021-09-16T02:40:25.512Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:40:30.912Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado está com o estoque zerado."]}
+2021-09-16T02:48:27.697Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:48:34.747Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado está com o estoque zerado."]}
+2021-09-16T02:49:02.197Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:49:03.670Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:49:08.680Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado está com o estoque zerado."]}
+2021-09-16T02:49:53.333Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:49:59.595Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado está com o estoque zerado."]}
+2021-09-16T02:50:17.483Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:50:23.764Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado está com o estoque zerado."]}
+2021-09-16T02:51:03.615Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:51:13.996Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:51:19.867Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado está com o estoque zerado."]}
+2021-09-16T02:51:50.706Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:51:56.049Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado está com o estoque zerado."]}
+2021-09-16T02:52:13.560Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:52:18.705Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado está com o estoque zerado."]}
+2021-09-16T02:53:27.323Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:53:35.903Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado está com o estoque zerado."]}
+2021-09-16T02:54:22.023Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:54:27.036Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado está com o estoque zerado."]}
+2021-09-16T02:54:57.615Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:55:14.138Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:55:19.593Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"status":400,"msg":["O 'produto_id' informado está com o estoque zerado."]}
+2021-09-16T02:55:53.615Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:56:01.752Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:58:06.092Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:58:44.917Z [loja-api] info API iniciada na porta 9902
+2021-09-16T02:58:53.561Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-16T02:59:30.915Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:01:04.384Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:01:23.922Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:01:48.285Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-16T03:02:45.779Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:02:52.011Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-16T03:03:59.777Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:04:59.291Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:05:06.656Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-16T03:05:35.007Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:05:40.716Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-16T03:05:51.328Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:05:56.922Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-16T03:06:33.856Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:06:39.050Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-16T03:06:49.286Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:06:54.655Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-16T03:10:30.757Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:10:49.535Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:11:06.245Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:11:11.747Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-16T03:11:54.609Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:12:01.279Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-16T03:12:13.686Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:12:19.380Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-16T03:13:04.194Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:13:10.059Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-16T03:13:42.448Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:13:48.870Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-16T03:14:06.995Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:14:14.846Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-16T03:14:30.119Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:14:35.618Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-16T03:15:31.675Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:15:38.410Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-16T03:17:37.189Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:18:32.771Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-16T03:20:59.690Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:21:38.082Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:22:39.729Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: false
+2021-09-16T03:23:14.974Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:23:42.557Z [loja-api] error POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99}  |  RESPONSE: {"name":"SequelizeValidationError","errors":[{"message":"venda.data cannot be null","type":"notNull Violation","path":"data","value":null,"origin":"CORE","instance":{"vendaId":null,"clienteId":2,"produtoId":1,"valor":18.99},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]}
+2021-09-16T03:26:35.896Z [loja-api] info POST /vendas |  REQUEST: {"cliente_id":2,"produto_id":1,"valor":18.99,"data":"2021-09-16 00:26:00"}  |  RESPONSE: {"vendaId":13,"clienteId":2,"produtoId":1,"valor":"18.99","data":"2021-09-16T06:26:00.000Z"}
+2021-09-16T03:29:52.350Z [loja-api] info PUT /vendas |  REQUEST: {"cliente_id":2,"valor":19.55,"data":"2021-09-16 00:26:00"}  |  RESPONSE: {"vendaId":13,"valor":"19.55","data":"2021-09-16T06:26:00.000Z","produtoId":1,"clienteId":2}
+2021-09-16T03:30:57.604Z [loja-api] error DELETE /vendas/12 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 12 não localizado."}
+2021-09-16T03:32:49.361Z [loja-api] error DELETE /vendas/13 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-16T03:35:10.225Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:37:40.260Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:37:45.283Z [loja-api] error DELETE /vendas/11 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 11 não localizado."}
+2021-09-16T03:38:44.237Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:38:54.334Z [loja-api] error DELETE /vendas/11 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 11 não localizado."}
+2021-09-16T03:40:05.500Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:40:32.615Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:41:15.349Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:41:54.293Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:42:31.974Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:44:14.813Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:44:36.170Z [loja-api] error GET /produtos/1 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-16T03:46:06.530Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:46:15.574Z [loja-api] error GET /produtos/1 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-16T03:48:24.643Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:48:36.809Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:49:19.381Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:49:41.105Z [loja-api] error GET /vendas/11 |  REQUEST: {}  |  RESPONSE: {}
+2021-09-16T03:50:50.196Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:50:55.829Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:51:42.948Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:51:47.991Z [loja-api] error GET /vendas/11 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 11 não localizado."}
+2021-09-16T03:53:51.331Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:55:01.762Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:55:46.873Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:56:54.386Z [loja-api] info API iniciada na porta 9902
+2021-09-16T03:59:07.932Z [loja-api] error GET /vendas/10 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 10 não localizado."}
+2021-09-16T03:59:30.380Z [loja-api] error GET /vendas/9 |  REQUEST: {}  |  RESPONSE: {"status":404,"msg":"ID 9 não localizado."}
+2021-09-16T04:00:08.982Z [loja-api] info API iniciada na porta 9902

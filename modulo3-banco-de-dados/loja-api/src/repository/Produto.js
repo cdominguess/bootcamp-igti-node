@@ -13,7 +13,7 @@ export default class ProdutoRepository extends BaseRepository {
      * @returns 
      */
     async retornarEstoque(idProduto) {
-        const ret = await this.filtrar(['estoque'], [{ campo: 'produto_id', tipo: 'num', valor: idProduto }]);
+        const ret = await this.filtrar(['estoque'], { produtoId: idProduto });
         
         return ret[0].estoque;
     }
@@ -25,8 +25,7 @@ export default class ProdutoRepository extends BaseRepository {
      * @returns void 
      */
     async atualizarEstoque(qtdeEstoque, idProduto) {
-        const objAtualizar = { "estoque": qtdeEstoque };
-        //console.log('OBJ de produto para atualizar', objAtualizar);
+        const objAtualizar = { "estoque": qtdeEstoque }; //console.log('OBJ de produto para atualizar', objAtualizar);
         
         await this.atualizar(objAtualizar, idProduto);
     }

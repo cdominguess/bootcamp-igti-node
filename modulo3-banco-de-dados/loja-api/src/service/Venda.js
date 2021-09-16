@@ -30,7 +30,7 @@ export default class VendaService extends BaseService {
         // Atualiza o estoque do produto
         const estoqueProd = (await this._produtoRepository.retornarEstoque(obj.produto_id)) - 1; //console.log('estoque para atualizar', estoqueProd);
         this._produtoRepository.atualizarEstoque(estoqueProd, obj.produto_id);
-
+        
         return objVendaCriada;
     }
 
@@ -74,8 +74,8 @@ export default class VendaService extends BaseService {
         await this._instanciaRepository.excluir(id);
 
         // Atualiza o estoque do produto
-        const estoqueProd = (await this._produtoRepository.retornarEstoque(objVendaOriginal.produto_id)) + 1; //console.log('estoque para atualizar', estoqueProd);
-        this._produtoRepository.atualizarEstoque(estoqueProd, objVendaOriginal.produto_id);
+        const estoqueProd = (await this._produtoRepository.retornarEstoque(objVendaOriginal.produtoId)) + 1; //console.log('estoque para atualizar', estoqueProd);
+        this._produtoRepository.atualizarEstoque(estoqueProd, objVendaOriginal.produtoId);
     }
 
     /**
