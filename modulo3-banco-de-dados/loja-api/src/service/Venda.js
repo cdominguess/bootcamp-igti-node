@@ -2,6 +2,7 @@ import BaseService from '../service/Base.js';
 import VendaRepository from '../repository/Venda.js';
 import ClienteRepository from '../repository/Cliente.js';
 import ProdutoRepository from '../repository/Produto.js';
+
 export default class VendaService extends BaseService {
 
     constructor() {
@@ -10,6 +11,38 @@ export default class VendaService extends BaseService {
         this._produtoRepository = new ProdutoRepository();
         this._clienteRepository = new ClienteRepository();
     }
+
+    /**
+     * Método sobrescrito da classe base pois pode receber filtros específicos por queryString
+     * @param {integer} produtoId 
+     * @param {integer} clienteId 
+     * @param {integer} fornecedorId 
+     * @returns 
+     */
+    async buscar(produtoId, clienteId, fornecedorId) {
+        if (produtoId !== undefined) {
+            console.log('> buscando vendas por produto.');
+
+            return await this._instanciaRepository.buscarVendaPorProduto(produtoId);
+        }
+        
+        if (clienteId !== undefined) {
+            console.log('> buscando vendas por cliente.');
+
+            return await this._instanciaRepository.buscarVendaPorCliente(clienteId);
+        }
+        
+        if (fornecedorId !== undefined) {
+            console.log('> buscando vendas por fornecedor.');
+
+            return await this._instanciaRepository.buscarVendaPorFornecedor(fornecedorId);
+        }
+        console.log('> buscando vendas normal.');
+        
+        return await this._instanciaRepository.buscar();
+        
+    }
+
 
     /**
      * Método sobrescrito da classe base porque ao criar uma venda é necessário executar a seguinte ação:

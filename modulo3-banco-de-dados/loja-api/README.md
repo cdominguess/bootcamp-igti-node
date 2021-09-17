@@ -4,7 +4,7 @@ Criado para aprofundar estudos de criação de API com NodeJS, aplicando boas pr
 - Separação da aplicação em camadas: Controller, Service e Repository;
 - Cada arquivo em determinada camada foi criado com o conceito de Classes do Javacript, assim tira-se o máximo de proveito possível da orientação à objetos que o Javascript possibilita em ES6 - sem uso de Typescrypt;
 - Cada camada possui uma classe Base para que as demais estendam desta. Com isso os recursos utilizados por todas: buscar, buscarPorId, criar, atualizar e excluir estão encapsulados nas classes base;
-- Por fim a classe Base de repositório receberá do arquivo de configuração config.js o adapter que deverá trabalar: "PgPool" ou "PgSequelize" (este último ainda será implementado, por hora apenas existe a classe de adapter);
+- Por fim a classe Base de repositório receberá das classes que estendem o adapter de banco que irá trabalhar: PgPool, PgSequelize ou PgMongoDb;
 
 Exemplo da estrutura do recurso /clientes da API:
 
@@ -21,8 +21,7 @@ objRouter.get("/", (req, res, next) => {
 });
 
 export default objRouter;
-```
-asassa  
+```    
 &nbsp;
 
 CONTROLLER:
@@ -83,11 +82,11 @@ import BaseRepository from "./BaseRepository.js";
 export default class ClienteRepository extends BaseRepository {
     
     constructor() {
-        super('cliente');
+        super('cliente', 'pgSequelize');
     }
 }
 ```
-No Repository apenas passar o nome da entidade que o Repository base irá trabalhar.  
+No Repository apenas passar o nome da entidade que o Repository base irá trabalhar, também o adapter de banco: PgPool (driver nativo do Postgres), PgSequelize (ORM) ou PgMongoDb (driver do Mongo).  
 &nbsp;
 
 Dessa maneira fica muito fácil criar novos recursos, bastando seguir a "receita" acima.  
