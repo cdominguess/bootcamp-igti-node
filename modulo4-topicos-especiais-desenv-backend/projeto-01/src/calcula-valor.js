@@ -22,14 +22,39 @@ function calcularMontante(capital, taxa, parcelas) {
     return arredondarValor(montante);
 }
 
+/**
+ * Arredonda um valor passado
+ * @param {decimal} valor 
+ * @returns 
+ */
 function arredondarValor(valor) {
     const precisao = 100;
-    const vlrArredondado = Math.round(valor * precisao) / precisao;
+    const vlrArredondado = Math.round((valor + Number.EPSILON) * precisao) / precisao;
 
     return vlrArredondado;
 }
 
+/**
+ * Calcula as prestações dado um montante passado
+ * @param {decimal} montante 
+ * @param {integer} numParcelas 
+ * @returns 
+ */
+function calcularPrestacoes(montante, numParcelas) {
+    const prestacaoBase = arredondarValor(montante / numParcelas);
+    const vlrTotalPrestacoes = prestacaoBase * numParcelas;
+    const resultado = Array(numParcelas).fill(prestacaoBase);
+    
+    // Se der diferença entre a soma das prestações e o montante, calcula a diferença para a primeira parcela
+    if (vlrTotalPrestacoes != montante) {
+        resultado[0] = arredondarValor(resultado[0] + (montante - vlrTotalPrestacoes));
+    }
+
+    return resultado;
+}
+
 module.exports = {
     calcularMontante,
-    arredondarValor
+    arredondarValor,
+    calcularPrestacoes
 };

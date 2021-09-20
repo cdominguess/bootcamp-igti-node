@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "tw": "jest --watch",
     "lint": "npx eslint src/** test/** --fix"
   },
   "keywords": [],
