@@ -52,24 +52,25 @@ describe('TESTE: arredondarValor', () => {
 
 describe('TESTES: calcularPrestacoes', () => {
     test('O número de parcelas é igual ao número de prestações', () => {
+        const vlrMontante = 200;
         const numPrestacoes = 6;
         
-        const arrPrestacoes = calculaValor.calcularPrestacoes(200, numPrestacoes);
+        const arrPrestacoes = calculaValor.calcularPrestacoes(vlrMontante, numPrestacoes);
         
         expect(arrPrestacoes.length).toBe(numPrestacoes);
     });
 
     test('Uma única prestação, o valor é igual ao montante', () => {
-        const numPrestacoes = 1;
         const vlrMontante = 50;
+        const numPrestacoes = 1;
         const arrPrestacoes = calculaValor.calcularPrestacoes(vlrMontante, numPrestacoes);
 
         expect(arrPrestacoes[0]).toBe(50);
     });
 
     test('Com duas prestações, o valor é igual a metade do montante', () => {
-        const numPrestacoes = 2;
         const vlrMontante = 50;
+        const numPrestacoes = 2;
 
         const arrPrestacoes = calculaValor.calcularPrestacoes(vlrMontante, numPrestacoes);
 
@@ -77,8 +78,8 @@ describe('TESTES: calcularPrestacoes', () => {
     });
 
     test('O valor das soma das prestações deve ser igual ao montante com duas casas decimais', () => {
-        const numPrestacoes = 6;
         const vlrMontante = 200;
+        const numPrestacoes = 6;
 
         const arrPrestacoes = calculaValor.calcularPrestacoes(vlrMontante, numPrestacoes);
 
@@ -86,5 +87,17 @@ describe('TESTES: calcularPrestacoes', () => {
         
         const soma = calculaValor.arredondarValor(arrPrestacoes[0] + arrPrestacoes[1] + arrPrestacoes[2] + arrPrestacoes[3] + arrPrestacoes[4] + arrPrestacoes[5]);
         expect(soma).toBe(200);
+    });
+
+    test('Desafio semi-final', () => {
+        // Dado (givem)
+        const vlrMontante = 101.994;
+        const numPrestacoes = 3;
+
+        // Quando (when)
+        const arrPrestacoes = calculaValor.calcularPrestacoes(vlrMontante, numPrestacoes);
+
+        // Então (then)
+
     });
 });

@@ -41,14 +41,21 @@ function arredondarValor(valor) {
  * @returns 
  */
 function calcularPrestacoes(montante, numParcelas) {
-    const prestacaoBase = arredondarValor(montante / numParcelas);
-    const vlrTotalPrestacoes = prestacaoBase * numParcelas;
-    const resultado = Array(numParcelas).fill(prestacaoBase);
+    const vlrParcela = montante / numParcelas;
+    const parcelaBase = arredondarValor(vlrParcela);
+    const vlrTotalPrestacoes = parcelaBase * numParcelas;
+    //console.log('valor montante: ' + montante + ' - num parcelas: ' + numParcelas);
+    //console.log('valor por parcela sem arredondar: ' + vlrParcela + ' - valor da parcela arredondado: ' + parcelaBase);
+    //console.log('valor parcela base X parcelas: ' + vlrTotalPrestacoes);
+
+    const resultado = Array(numParcelas).fill(parcelaBase);
     
     // Se der diferença entre a soma das prestações e o montante, calcula a diferença para a primeira parcela
+    //console.log('resultado antes: ', resultado);
     if (vlrTotalPrestacoes != montante) {
         resultado[0] = arredondarValor(resultado[0] + (montante - vlrTotalPrestacoes));
     }
+    //console.log('resultado depois: ', resultado);
 
     return resultado;
 }
