@@ -1,0 +1,17 @@
+{
+  "name": "02-mock-spy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src/** test/** --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "jest": "^27.0.5"
+  },
+  "dependencies": {}
+}

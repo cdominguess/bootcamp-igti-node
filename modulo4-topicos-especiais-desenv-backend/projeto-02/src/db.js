@@ -49,3 +49,15 @@ const consultaModel = (sequelize, DataTypes) => {
 
     return Consulta;
 }
+
+const cliente = clienteModel(sequelize, Sequelize.DataTypes);
+const consulta = consultaModel(sequelize, Sequelize.DataTypes);
+
+cliente.hasMany(consulta, { as: 'Consultas' });
+consulta.belongsTo(cliente);
+
+module.exports = {
+    cliente,
+    consulta,
+    sequelize
+}

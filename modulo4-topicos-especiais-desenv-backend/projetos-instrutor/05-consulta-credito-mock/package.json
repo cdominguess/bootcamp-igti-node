@@ -1,0 +1,27 @@
+{
+  "name": "05-consulta-credito-mock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest --verbose=true --coverage=true",
+    "lint": "eslint src/** test/** --fix",
+    "watch": "jest --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "jest": "^27.1.1",
+    "supertest": "^6.1.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1"
+  }
+}
