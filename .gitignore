@@ -1,2 +1,3 @@
 # Para ignorar a pasta node_modules em todas as subpastas do projeto
 **/node_modules
+**/volumes
